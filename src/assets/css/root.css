@@ -326,9 +326,8 @@
     gap: 1.5rem;
   }
   #cs-navigation .cs-logo {
-    width: auto;
-    max-width: 12.5rem;
-    height: 100%;
+    max-width: 15rem;
+    height: auto;
     margin: 0 auto 0 0;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
