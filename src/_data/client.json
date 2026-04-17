@@ -5,13 +5,10 @@
     "phonePrimaryFormatted": "+39 348 4929303",
     "address": {
         "lineOne": "Domus Zero",
-        "lineTwo": "cc: Renerwave Srl",
-        "lineThree": "Via Gianpaolo Orsini 95/B",
         "city": "Firenze",
         "state": "FI",
         "zip": "50126",
         "country": "Italy",
-        "mapLink": "https://maps.app.goo.gl/jeNXTfrDAQskYNtd8"
     },
     "domain": "https://www.domuszero.com"
 }
