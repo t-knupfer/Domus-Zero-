@@ -1,0 +1,372 @@
+---
+title: 'Domus Zero'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-856">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Making Your Home Sustainable</span>
+            <h1 class="cs-title">Domus Zero</h1>
+            <p class="cs-text">
+                Accelerating the sustainable energy transition for private homes in Italy based on uniquely reliable and fully integrated solar and heat pump installations.
+            </p>
+            <a href="/contact" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <!--Mobile-->
+            <source media="(max-width: 600px)" srcset="./assets/images/lightbulb_nature.jpg">
+            <!--Tablet-->
+            <source media="(min-width: 601px)" srcset="./assets/images/lightbulb_nature.jpg">
+            <!--Desktop-->
+            <source media="(min-width: 1024px)" srcset="./assets/images/lightbulb_nature.jpg">
+            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="Lightbulb in nature" width="570" height="701">
+        </picture>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
+</section>
+
+<!-- ============================================ -->
+<!--            Side By Side - About Us           -->
+<!-- ============================================ -->
+
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/treelined_drive.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/treelined_drive.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/treelined_drive.jpg" alt="Treelined Driveway" loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/tuscany_villa_standalone.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/tuscany_villa_standalone.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/tuscany_villa_standalone.jpg" alt="Tuscan Villa" loading="lazy" width="400" height="563">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">About Domus Zero</h2>
+            <p class="cs-text">
+                We specialize in sustainable energy solutions for private homes in Italy, helping homeowners reduce their reliance on fossil fuels and embrace greener living.
+            </p>
+            <p class="cs-text">
+                In doing so, we minimize carbon emissions and significantly reduce energy costs, creating a more sustainable and cost-efficient home.
+            </p>
+            <a href="/our-process" class="cs-button-solid">Our Process</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services - Overview                 -->
+<!-- ============================================ -->
+
+<section id="services-1354">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">We’re Committed to Deliver High Quality Services</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Integrated </span> Solar and Heat Pump Installation</h3>
+                </a>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg">
+                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">High Quality, Efficient, and Reliable Equipment/Systems</span></h3>
+                </a>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg">
+                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Turnkey Solution with All-Inclusive</span> pricing</h3>
+                </a>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg">
+                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Optional Lifetime</span> Maintenance</h3>
+                </a>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting4.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting4.jpg">
+                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting4.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse - Our Services             -->
+<!-- ============================================ -->
+
+<section id="sbs-r-869">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/solar_owl.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/solar_owl.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/solar_owl.jpg" alt="Solar Panel and Owl" loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/heatpump.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/heatpump.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/heatpump.png" alt="Heatpump" loading="lazy" width="400" height="563">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Our All-Inclusive Service</h2>
+            <p class="cs-text">
+                Domus Zero offers an all-inclusive turnkey solution:
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    Proactive collaboration with your Comune and your local electricity provider to propose viable sustainable solutions for your home
+                </li>
+                <li class="cs-li">
+                    Integrated installations of solar and heat pump systems based on fixed price offering within a few weeks from initial discusssion
+                </li>
+                <li class="cs-li">
+                    Use of high quality, efficient, and reliable equipment/systems.
+                </li>
+                <li class="cs-li">
+                    Realization of attractive return on investment, reduced energy and heating costs, and minimized CO2 emissions.
+                </li>
+                <li class="cs-li">
+                    Carefree transition including concept development, project implementation management, disposal of old systems
+                    as well as all administrative processes with the Comune, the energy provider, etc.
+                </li>
+                <li class="cs-li">
+                    Minimized disruption for our
+                    customers during the implementation
+                </li>
+                <li class="cs-li">
+                    Optional: Regular services for the installed system
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--                 Why Choose Us                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-289">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Why Choose Us</span>
+                <h2 class="cs-title">The Most Reliable Switch to a Sustainable Home</h2>
+            </div>
+            <!--<p class="cs-text">
+                We have experience from hundreds of successfully installed sustainability projects.
+            </p>-->
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild-black.svg" alt="icon" width="40" height="48">
+                <h3 class="cs-h3">Carefree transition</h3>
+                <p class="cs-item-text">
+                    We take care of all the details, so you don't have to. Switch to a sustainable home with minimal disruption to your daily life.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/award.svg" alt="icon" width="48" height="48">
+                <h3 class="cs-h3">All-Inclusive Turnkey Service</h3>
+                <p class="cs-item-text">
+                    We plan with your Comune and local electricty provider, apply for government subsidies, dispose the old heating system, install a fully-integrated sustainable system, and carry out regular servicing if requested.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/call.svg" alt="icon" width="48" height="48">
+                <h3 class="cs-h3">Accomplished in Weeks</h3>
+                <p class="cs-item-text">
+                    From our first discussion to the completed installation in a matter of weeks.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Our Process                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1662">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Process</span>
+            <h2 class="cs-title">Turn Your Home Sustainable in just a Few Weeks</h2>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-item-number">01</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Contact Us
+                        </h3>
+                        <p class="cs-item-text">
+                            Via phone, email, or website and we will get back to you in no time.
+                            We will also ask you to prepare some basic information,
+                            e.g., Last month's/year's energy bill, exact address, some specific picture of house
+                            and existing energy systems, etc.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">02</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Schedule Initial Zoom/MS Teams Video Call
+                        </h3>
+                        <p class="cs-item-text">
+                            We will ask you to share the information we requested under point 01.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">03</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Remote Feasibility Analysis
+                        </h3>
+                        <p class="cs-item-text">
+                            We will do remote feasibility analyses including location, Comune, space, ... of your property.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">04</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            First Site Visit
+                        </h3>
+                        <p class="cs-item-text">
+                            We will schedule with you a 3h site visit to collect all required data (ideally while you are present).
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-item-number">05</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Tailored Solution
+                        </h3>
+                        <p class="cs-item-text">
+                            We develop a tailored and detailed solution including a specific offer.
+                            If you accept the offer, we will inform you within a few days about the detailed
+                            implementation plan/schedule.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">06</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            High-Quality Installation
+                        </h3>
+                        <p class="cs-item-text">
+                            High quality installation of integrated solar panel and heat pump solution all with minimum disruption to your home.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">07</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Hand Over
+                        </h3>
+                        <p class="cs-item-text">
+                            Final turnkey hand over of property-specific sustainable solution.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">08</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Support
+                        </h3>
+                        <p class="cs-item-text">
+                            Post-realization support as needed and requested by you.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!---SVG Graphic-->
+        <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/diagnol-ovals.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
+    </div>
+</section>
+
+
+{% include 'components/cta.html' %}
+{% endblock %}
