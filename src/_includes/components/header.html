@@ -28,18 +28,18 @@
             </a>
           </li>
           <li class="cs-li">
-            <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
-              About Us
+            <a href="{% if '/it/' in page.url %}/it/chi-siamo/{% else %}/about/{% endif %}" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
+              {% if "/it/" in page.url %}Chi siamo{% else %}About Us{% endif %}
             </a>
           </li>
           <li class="cs-li">
-            <a href="/our-services" class="cs-li-link {{ 'cs-active' if 'our-services' == page.fileSlug }}">
-              Our Services
+            <a href="{% if '/it/' in page.url %}/it/i-nostri-servizi/{% else %}/our-services/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-services' == page.fileSlug }}">
+              {% if "/it/" in page.url %}I nostri servizi{% else %}Our Services{% endif %}
             </a>
           </li>
           <li class="cs-li">
-            <a href="/our-process" class="cs-li-link {{ 'cs-active' if 'our-process' == page.fileSlug }}">
-              Our Process
+            <a href="{% if '/it/' in page.url %}/it/il-nostro-processo/{% else %}/our-process/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-process' == page.fileSlug }}">
+              {% if "/it/" in page.url %}Il nostro processo{% else %}Our Process{% endif %}
             </a>
           </li>
 <!--          <li class="cs-li">
@@ -48,8 +48,8 @@
             </a>
           </li>-->
           <li class="cs-li">
-            <a href="/contact" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
-              Contact
+            <a href="{% if '/it/' in page.url %}/it/contatto/{% else %}/contact/{% endif %}" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
+              {% if "/it/" in page.url %}Contatto{% else %}Contact{% endif %}
             </a>
           </li>
         </ul>
@@ -79,9 +79,15 @@
     </div>
     -->
     <!--Language toggle, uncomment button code if you want to enable a dark mode toggle-->
-    <a href="/it/" class="language-toggle" aria-label="Switch to Italian">
-      🇮🇹
-    </a>
+    {% if "/it/" in page.url %}
+      <a href="/" class="language-toggle" aria-label="Switch to English">
+        🇬🇧
+      </a>
+    {% else %}
+      <a href="/it/" class="language-toggle" aria-label="Switch to Italian">
+        🇮🇹
+      </a>
+    {% endif %}
     <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
     <button id="dark-mode-toggle" aria-label="dark mode toggle">
       <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
