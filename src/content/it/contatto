@@ -1,0 +1,97 @@
+---
+title: 'Contatto'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'it/contatto/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Contattaci</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/lightbulb_nature.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/lightbulb_nature.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/lightbulb_nature.jpg" alt="lightbulb in nature" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <!--
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Contatto</span>
+                    <h2 class="cs-title">Get in Touch</h2>
+                    <p class="cs-text">
+                        We’d love to hear from you! Whether you have questions, need expert advice, or are ready to make your home more sustainable, our team is here to help. </b>
+                        Please fill out the form below, and we’ll get back to you as soon as possible.
+                    </p>
+                </div>
+                <label>
+                    Name
+                    <input required type="text" id="name" name="name" placeholder="Name">
+                </label>
+                <label>
+                    Email
+                    <input required type="text" id="email" name="email" placeholder="Email">
+                </label>
+                <label>
+                    Phone
+                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                </label>
+                <label>
+                    Best Times To Reach You
+                    <input type="text" id="find" name="find-us" placeholder="Best times to reach you?">
+                </label>
+                <label class="cs-label-message">
+                    Message
+                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message</button>
+            </form>
+            -->
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
+                <!--Phone-->
+                <span class="cs-header">Telefono</span>
+                <a class="cs-link" href="tel:{{client.phonePrimaryForTel}}">{{client.phonePrimaryFormatted}}</a>
+                <a class="cs-link" href="tel:{{client.phoneSecondayForTel}}">{{client.phoneSecondaryFormatted}}</a>
+                <!--Address-->
+                <span class="cs-header">Indirizzo</span>
+                <a class="cs-link" href="{{client.address.mapLink}}">
+                    {{client.address.lineOne}},
+                    <br />
+                    <span class="cs-block">
+                        {{client.address.city}}
+                        {{client.address.state}}
+                        {{client.address.country}}
+                    </span>
+                </a>
+
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="/assets/images/tuscan_streets.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/tuscan_streets.jpg" alt="Tuscan Landscape" loading="lazy" width="2500" height="1667">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
