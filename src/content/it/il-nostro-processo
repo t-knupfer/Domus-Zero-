@@ -1,0 +1,142 @@
+---
+title: 'Il nostro processo'
+description: 'Il processo di Domus Zero'
+preloadImg: '/assets/images/imagename.format'
+permalink: 'it/il-nostro-processo/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/process.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Il nostro processo</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/lightbulb_nature.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/lightbulb_nature.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/lightbulb_nature.jpg" alt="lightbulb in nature" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Our Process                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1662">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Il nostro processo</span>
+            <h2 class="cs-title">Rendi la tua casa sostenibile in poche settimane</h2>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-item-number">01</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Contattaci
+                        </h3>
+                        <p class="cs-item-text">
+                            Per telefono, email o tramite il nostro sito web: ti risponderemo in tempi rapidi.
+                            Ti chiederemo anche di preparare alcune informazioni di base, ad esempio:
+                            l’ultima bolletta energetica (mensile o annuale), l’indirizzo esatto dell’immobile, alcune foto specifiche della casa e degli impianti energetici esistenti.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">02</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Prenota la prima chiamata su Zoom/Microsoft Teams
+                        </h3>
+                        <p class="cs-item-text">
+                            Ti chiederemo di condividere le informazioni richieste al punto 01.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">03</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Analisi di fattibilità a distanza
+                        </h3>
+                        <p class="cs-item-text">
+                            Effettueremo un’analisi di fattibilità remota, valutando posizione, Comune, spazio e altre caratteristiche della tua proprietà.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">04</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Primo sopralluogo
+                        </h3>
+                        <p class="cs-item-text">
+                            Programmeremo con te un sopralluogo di 3 ore per raccogliere tutti i dati necessari (idealmente con la tua presenza).
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-item-number">05</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Soluzione su misura
+                        </h3>
+                        <p class="cs-item-text">
+                            Sviluppiamo una soluzione dettagliata e personalizzata, inclusa un’offerta specifica. Se accetti l’offerta, ti informeremo entro pochi giorni sul piano di implementazione e l’agenda dettagliata.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">06</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Installazione di alta qualità
+                        </h3>
+                        <p class="cs-item-text">
+                            Installazione di pannelli solari e pompe di calore integrate, con il minimo disturbo per la tua casa.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">07</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Consegna finale
+                        </h3>
+                        <p class="cs-item-text">
+                            Consegna finale della soluzione sostenibile su misura per la tua proprietà.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-item-number">08</span>
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Assistenza
+                        </h3>
+                        <p class="cs-item-text">
+                            Supporto post-realizzazione, su richiesta e in base alle tue esigenze.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!---SVG Graphic-->
+        <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/diagnol-ovals.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}
