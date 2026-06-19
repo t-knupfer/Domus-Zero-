@@ -1,0 +1,86 @@
+---
+title: 'I nostri servizi'
+description: 'I servizi di Domus Zero'
+preloadImg: '/assets/images/imagename.format'
+permalink: 'it/i-nostri-servizi/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">I nostri servizi</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/lightbulb_nature.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/lightbulb_nature.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/lightbulb_nature.jpg" alt="lightbulb in nature" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse - Our Services             -->
+<!-- ============================================ -->
+
+<section id="sbs-r-869">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/tuscan_streets.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/tuscan_streets.jpg">
+                <img aria-hidden="true" decoding="async" src="./assets/images/tuscan_streets.jpg" alt="Tuscan Landscape" loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/ev_charger.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/ev_charger.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/ev_charger.jpg" alt="EV Charger" loading="lazy" width="400" height="563">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">I nostri servizi</span>
+            <h2 class="cs-title">Il nostro servizio chiavi in mano tutto compreso</h2>
+            <p class="cs-text">
+                Domus Zero offers an all-inclusive turnkey solution:
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    Proactive collaboration with your Comune and your local electricity provider to propose viable sustainable solutions for your home
+                </li>
+                <li class="cs-li">
+                    Integrated installations of solar and heat pump systems based on fixed price offering within a few weeks from initial discusssion
+                </li>
+                <li class="cs-li">
+                    Use of high quality, efficient, and reliable equipment/systems.
+                </li>
+                <li class="cs-li">
+                    Realization of attractive return on investment, reduced energy and heating costs, and minimized CO2 emissions.
+                </li>
+                <li class="cs-li">
+                    Carefree transition including concept development, project implementation management, disposal of old systems
+                    as well as all administrative processes with the Comune, the energy provider, etc.
+                </li>
+                <li class="cs-li">
+                    Minimized disruption for our
+                    customers during the implementation
+                </li>
+                <li class="cs-li">
+                    Optional: Regular services for the installed system
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}
