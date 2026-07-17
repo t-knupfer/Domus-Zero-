@@ -238,6 +238,16 @@
     transform: translate(-50%, 100%);
     transition: transform 0.3s, opacity 0.3s;
   }
+  .language-toggle {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    order: 2;
+  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -336,6 +346,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+    order: 3;
   }
   #cs-navigation .cs-logo img {
     max-height: 8rem;
@@ -359,7 +370,7 @@
   }
   #cs-navigation .cs-nav {
     /* sends it to the right in the 3rd position */
-    order: 3;
+    order: 1;
   }
   #cs-navigation .cs-contact-group {
     display: none;
