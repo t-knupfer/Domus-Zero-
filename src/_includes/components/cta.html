@@ -5,19 +5,50 @@
 <section id="cta-262">
     <div class="cs-container">
         <div class="cs-left-section">
-            <h2 class="cs-title">Start Your Energy Transition Today</h2>
-            <a href="/contact" class="cs-button-solid">Contact Us Now</a>
+            <h2 class="cs-title">
+                {% if "/it/" in page.url %}
+                    Inizia oggi la tua transizione energetica
+                {% else %}
+                    Start Your Energy Transition Today
+                {% endif %}
+            </h2>
+
+            <a href="{% if '/it/' in page.url %}/it/contatto/{% else %}/contact/{% endif %}" class="cs-button-solid">
+                {% if "/it/" in page.url %}
+                    Contattaci oggi
+                {% else %}
+                    Contact Us Now
+                {% endif %}
+            </a>
         </div>
+
         <div class="cs-content">
-            <span class="cs-header">Available Hours</span>
+            <span class="cs-header">
+                {% if "/it/" in page.url %}
+                    Orari disponibili
+                {% else %}
+                    Available Hours
+                {% endif %}
+            </span>
+
             <p class="cs-p">
-                Online: 24/7 <br>
+                {% if "/it/" in page.url %}
+                    Online: 24 ore su 24, 7 giorni su 7
+                {% else %}
+                    Online: 24/7
+                {% endif %}
+                <br>
             </p>
+
             <p class="cs-p">
-                Per phone: Everyday <br>
-                from 9am-6pm
+                {% if "/it/" in page.url %}
+                    Per telefono: Tutti i giorni dalle 9:00 alle 18:00
+                {% else %}
+                    Per phone: Everyday from 9am-6pm
+                {% endif %}
             </p>
         </div>
+
         <picture class="cs-background">
             <source media="(max-width: 600px)" srcset="../assets/images/solar_trailer_car.JPG">
             <source media="(min-width: 601px)" srcset="../assets/images/solar_trailer_car.JPG">
