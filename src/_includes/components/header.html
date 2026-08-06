@@ -23,7 +23,7 @@
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
-            <a href="/" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
+            <a href="{% if '/it/' in page.url %}/it/{% else %}/{% endif %}" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
               Home
             </a>
           </li>
