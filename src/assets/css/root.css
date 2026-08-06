@@ -197,6 +197,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  /*
   body.dark-mode #dark-mode-toggle .cs-sun {
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -238,6 +239,7 @@
     transform: translate(-50%, 100%);
     transition: transform 0.3s, opacity 0.3s;
   }
+  */
   .language-toggle {
     width: 3rem;
     height: 3rem;
@@ -250,6 +252,7 @@
   }
 }
 /* Desktop - 1024px */
+/*
 @media only screen and (min-width: 64rem) {
   #dark-mode-toggle {
     margin: 0;
@@ -262,6 +265,7 @@
     cursor: pointer;
   }
 }
+*/
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
