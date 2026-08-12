@@ -254,15 +254,13 @@
   }
   
   .language-toggle img {
-    width: 2rem !important;
-    height: 1.5rem !important;
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    filter: none !important;
-    transform: none !important;
-    position: relative !important;
-    z-index: 99999 !important;
+    width: 1.5rem;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 21;
+    opacity: 1;
+    visibility: visible;
   }
 /* Desktop - 1024px */
 /*
