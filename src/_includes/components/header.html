@@ -79,9 +79,43 @@
     </div>
     -->
     <!--Language toggle, uncomment button code if you want to enable a dark mode toggle-->
-    <a href="/about/" class="language-toggle" aria-label="Switch to English">
-      <img src="/assets/svgs/gb.svg" alt="" width="24" height="18">
-    </a>
+    {% if "/it/" in page.url %}
+    
+      {% if page.url == "/it/" %}
+        {% set languageUrl = "/" %}
+      {% elif page.url == "/it/chi-siamo/" %}
+        {% set languageUrl = "/about/" %}
+      {% elif page.url == "/it/contatto/" %}
+        {% set languageUrl = "/contact/" %}
+      {% elif page.url == "/it/i-nostri-servizi/" %}
+        {% set languageUrl = "/our-services/" %}
+      {% elif page.url == "/it/il-nostro-processo/" %}
+        {% set languageUrl = "/our-process/" %}
+      {% endif %}
+    
+      <a href="{{ languageUrl }}" class="language-toggle" aria-label="Switch to English">
+        <img src="/assets/svgs/gb.svg" alt="" width="24" height="18">
+      </a>
+    
+    {% else %}
+    
+      {% if page.url == "/" %}
+        {% set languageUrl = "/it/" %}
+      {% elif page.url == "/about/" %}
+        {% set languageUrl = "/it/chi-siamo/" %}
+      {% elif page.url == "/contact/" %}
+        {% set languageUrl = "/it/contatto/" %}
+      {% elif page.url == "/our-services/" %}
+        {% set languageUrl = "/it/i-nostri-servizi/" %}
+      {% elif page.url == "/our-process/" %}
+        {% set languageUrl = "/it/il-nostro-processo/" %}
+      {% endif %}
+    
+      <a href="{{ languageUrl }}" class="language-toggle" aria-label="Passa all'italiano">
+        <img src="/assets/svgs/it.svg" alt="" width="24" height="18">
+      </a>
+    
+    {% endif %}
     
     <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
     <!--
