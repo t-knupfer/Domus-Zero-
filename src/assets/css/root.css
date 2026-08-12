@@ -248,7 +248,9 @@
     align-items: center;
     text-decoration: none;
     order: 2;
-    flex-shrink:0;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
   }
   
   .language-toggle img {
