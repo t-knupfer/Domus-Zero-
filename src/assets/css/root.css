@@ -241,21 +241,21 @@
   }
   */
   .language-toggle {
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     flex-shrink: 0;
     position: relative;
-    z-index: 20;
+    z-index: 10;
   }
   
   .language-toggle img {
+    width: 1.5rem;
+    height: auto;
     display: block;
-    position: relative;
-    z-index: 21;
-    opacity: 1;
-    visibility: visible;
   }
 /* Desktop - 1024px */
 /*
