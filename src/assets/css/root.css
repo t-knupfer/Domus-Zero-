@@ -251,8 +251,6 @@
   }
   
   .language-toggle img {
-    width: 1.5rem;
-    height: auto;
     display: block;
     position: relative;
     z-index: 21;
