@@ -243,15 +243,17 @@
   .language-toggle {
     width: 3rem;
     height: 3rem;
-    display: flex;
-    flex-shrink: 0;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     order: 2;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 99999;
+    background: red;
   }
   .language-toggle img {
-    width: 1.5rem;
+    width: 2rem;
     height: auto;
     display: block;
   }
