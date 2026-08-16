@@ -238,6 +238,7 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
+/*
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #dark-mode-toggle {
@@ -293,6 +294,29 @@
         }
     }
 }
+*/
+@media only screen and (min-width: 0rem) {
+    .language-toggle {
+        width: calc(48 / 16 * 1rem);
+        height: calc(48 / 16 * 1rem);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1000;
+        text-decoration: none;
+
+        img {
+            width: calc(24 / 16 * 1rem);
+            height: auto;
+            display: block;
+            pointer-events: none;
+        }
+    }
+}
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -336,7 +360,7 @@
             }
         }
     }
-
+@media only screen and (min-width: 0rem)
     #cs-navigation {
         width: 94%;
         max-width: calc(1280 / 16 * 1rem);
@@ -439,6 +463,7 @@
         .cs-nav {
             /* sends it to the right in the 3rd position */
             order: 3;
+            flex-shrink: 0;
         }
 
         .cs-contact-group {
@@ -1434,6 +1459,7 @@
 }
 
 /* Dark Mode */
+/*
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #cta-262 {
@@ -1448,6 +1474,7 @@
         }
     }
 }
+*/
 
 /*-- -------------------------- -->
 <---           Footer           -->
