@@ -319,6 +319,7 @@
 }
 
 /* Desktop - 1024px */
+/*
 @media only screen and (min-width: 64rem) {
     #dark-mode-toggle {
         margin: 0;
@@ -332,6 +333,7 @@
         }
     }
 }
+*/
 
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
@@ -360,7 +362,7 @@
             }
         }
     }
-@media only screen and (min-width: 0rem)
+
     #cs-navigation {
         width: 94%;
         max-width: calc(1280 / 16 * 1rem);
@@ -1459,7 +1461,6 @@
 }
 
 /* Dark Mode */
-/*
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #cta-262 {
@@ -1474,7 +1475,6 @@
         }
     }
 }
-*/
 
 /*-- -------------------------- -->
 <---           Footer           -->
