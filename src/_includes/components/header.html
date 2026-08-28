@@ -23,23 +23,23 @@
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
-            <a href="{% if '/it/' in page.url %}/it/{% else %}/{% endif %}" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
+            <a href="{% if '/en/' in page.url %}/en/{% else %}/{% endif %}" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
               Home
             </a>
           </li>
           <li class="cs-li">
-            <a href="{% if '/it/' in page.url %}/it/chi-siamo/{% else %}/about/{% endif %}" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
-              {% if "/it/" in page.url %}Chi siamo{% else %}About Us{% endif %}
+            <a href="{% if '/en/' in page.url %}/en/about/{% else %}/chi-siamo/{% endif %}" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
+              {% if "/en/" in page.url %}About Us{% else %}Chi siamo{% endif %}
             </a>
           </li>
           <li class="cs-li">
-            <a href="{% if '/it/' in page.url %}/it/i-nostri-servizi/{% else %}/our-services/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-services' == page.fileSlug }}">
-              {% if "/it/" in page.url %}I nostri servizi{% else %}Our Services{% endif %}
+            <a href="{% if '/en/' in page.url %}/en/our-services/{% else %}/i-nostri-servizi/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-services' == page.fileSlug }}">
+              {% if "/en/" in page.url %}Our Services{% else %}I nostri servizi{% endif %}
             </a>
           </li>
           <li class="cs-li">
-            <a href="{% if '/it/' in page.url %}/it/il-nostro-processo/{% else %}/our-process/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-process' == page.fileSlug }}">
-              {% if "/it/" in page.url %}Il nostro processo{% else %}Our Process{% endif %}
+            <a href="{% if '/en/' in page.url %}/en/our-process/{% else %}/il-nostro-processo/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-process' == page.fileSlug }}">
+              {% if "/en/" in page.url %}Our Process{% else %}Il nostro processo{% endif %}
             </a>
           </li>
 <!--          <li class="cs-li">
@@ -48,8 +48,8 @@
             </a>
           </li>-->
           <li class="cs-li">
-            <a href="{% if '/it/' in page.url %}/it/contatto/{% else %}/contact/{% endif %}" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
-              {% if "/it/" in page.url %}Contatto{% else %}Contact{% endif %}
+            <a href="{% if '/en/' in page.url %}/en/contact/{% else %}/contatto/{% endif %}" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
+              {% if "/en/" in page.url %}Contact{% else %}Contatto{% endif %}
             </a>
           </li>
         </ul>
@@ -79,18 +79,18 @@
     </div>
     -->
     <!--Language toggle, uncomment button code if you want to enable a dark mode toggle-->
-    {% if "/it/" in page.url %}
+    {% if "/en/" in page.url %}
     
-      {% if page.url == "/it/" %}
+      {% if page.url == "/en/" %}
         {% set languageUrl = "/" %}
-      {% elif page.url == "/it/chi-siamo/" %}
-        {% set languageUrl = "/about/" %}
-      {% elif page.url == "/it/contatto/" %}
-        {% set languageUrl = "/contact/" %}
-      {% elif page.url == "/it/i-nostri-servizi/" %}
-        {% set languageUrl = "/our-services/" %}
-      {% elif page.url == "/it/il-nostro-processo/" %}
-        {% set languageUrl = "/our-process/" %}
+      {% elif page.url == "/en/about/" %}
+        {% set languageUrl = "/chi-siamo/" %}
+      {% elif page.url == "/en/contact/" %}
+        {% set languageUrl = "/contatto/" %}
+      {% elif page.url == "/en/our-services/" %}
+        {% set languageUrl = "/i-nostri-servizi/" %}
+      {% elif page.url == "/en/our-process/" %}
+        {% set languageUrl = "/il-nostro-processo/" %}
       {% endif %}
     
       <a href="{{ languageUrl }}" class="language-toggle" aria-label="Switch to English">
@@ -100,15 +100,15 @@
     {% else %}
     
       {% if page.url == "/" %}
-        {% set languageUrl = "/it/" %}
-      {% elif page.url == "/about/" %}
-        {% set languageUrl = "/it/chi-siamo/" %}
-      {% elif page.url == "/contact/" %}
-        {% set languageUrl = "/it/contatto/" %}
-      {% elif page.url == "/our-services/" %}
-        {% set languageUrl = "/it/i-nostri-servizi/" %}
-      {% elif page.url == "/our-process/" %}
-        {% set languageUrl = "/it/il-nostro-processo/" %}
+        {% set languageUrl = "/en/" %}
+      {% elif page.url == "/chi-siamo/" %}
+        {% set languageUrl = "/en/about/" %}
+      {% elif page.url == "/contatto/" %}
+        {% set languageUrl = "/en/contact/" %}
+      {% elif page.url == "/i-nostri-servizi/" %}
+        {% set languageUrl = "/en/our-services/" %}
+      {% elif page.url == "/il-nostro-processo/" %}
+        {% set languageUrl = "/en/our-process/" %}
       {% endif %}
     
       <a href="{{ languageUrl }}" class="language-toggle" aria-label="Passa all'italiano">
