@@ -6,13 +6,15 @@
   <div class="cs-container">
     <!--Nav Logo-->
     <!--Logo is turned white in the css with a filter on dark mode-->
-    <a href="/" class="cs-logo" aria-label="back to home">
+    <a href="{% if '/en/' in page.url %}/en/{% else %}/{% endif %}"
+      class="cs-logo"
+      aria-label="{% if '/en/' in page.url %}Back to home{% else %}Torna alla home{% endif %}">
       <img src="/assets/images/tempAddOns/DZ-logo.jpeg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
     </a>
     <!--Navigation List-->
     <nav class="cs-nav" role="navigation">
       <!--Mobile Nav Toggle-->
-      <button class="cs-toggle" aria-label="mobile menu toggle">
+      <button class="cs-toggle" aria-label="{% if '/en/' in page.url %}Mobile menu toggle{% else %}Apri o chiudi il menu mobile{% endif %}"
         <div class="cs-box" aria-hidden="true">
           <span class="cs-line cs-line1" aria-hidden="true"></span>
           <span class="cs-line cs-line2" aria-hidden="true"></span>
@@ -23,32 +25,36 @@
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
-            <a href="{% if '/en/' in page.url %}/en/{% else %}/{% endif %}" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
+            <a href="{% if '/en/' in page.url %}/en/{% else %}/{% endif %}"
+               class="cs-li-link {{ 'cs-active' if page.url == '/' or page.url == '/en/' }}">
               Home
             </a>
           </li>
+          
           <li class="cs-li">
-            <a href="{% if '/en/' in page.url %}/en/about/{% else %}/chi-siamo/{% endif %}" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
+            <a href="{% if '/en/' in page.url %}/en/about/{% else %}/chi-siamo/{% endif %}"
+               class="cs-li-link {{ 'cs-active' if page.url == '/chi-siamo/' or page.url == '/en/about/' }}">
               {% if "/en/" in page.url %}About Us{% else %}Chi siamo{% endif %}
             </a>
           </li>
+          
           <li class="cs-li">
-            <a href="{% if '/en/' in page.url %}/en/our-services/{% else %}/i-nostri-servizi/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-services' == page.fileSlug }}">
+            <a href="{% if '/en/' in page.url %}/en/our-services/{% else %}/i-nostri-servizi/{% endif %}"
+               class="cs-li-link {{ 'cs-active' if page.url == '/i-nostri-servizi/' or page.url == '/en/our-services/' }}">
               {% if "/en/" in page.url %}Our Services{% else %}I nostri servizi{% endif %}
             </a>
           </li>
+          
           <li class="cs-li">
-            <a href="{% if '/en/' in page.url %}/en/our-process/{% else %}/il-nostro-processo/{% endif %}" class="cs-li-link {{ 'cs-active' if 'our-process' == page.fileSlug }}">
+            <a href="{% if '/en/' in page.url %}/en/our-process/{% else %}/il-nostro-processo/{% endif %}"
+               class="cs-li-link {{ 'cs-active' if page.url == '/il-nostro-processo/' or page.url == '/en/our-process/' }}">
               {% if "/en/" in page.url %}Our Process{% else %}Il nostro processo{% endif %}
             </a>
           </li>
-<!--          <li class="cs-li">
-            <a href="/faq" class="cs-li-link {{ 'cs-active' if 'faq' == page.fileSlug }}">
-              FAQ
-            </a>
-          </li>-->
+          
           <li class="cs-li">
-            <a href="{% if '/en/' in page.url %}/en/contact/{% else %}/contatto/{% endif %}" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
+            <a href="{% if '/en/' in page.url %}/en/contact/{% else %}/contatto/{% endif %}"
+               class="cs-li-link {{ 'cs-active' if page.url == '/contatto/' or page.url == '/en/contact/' }}">
               {% if "/en/" in page.url %}Contact{% else %}Contatto{% endif %}
             </a>
           </li>
@@ -93,8 +99,8 @@
         {% set languageUrl = "/il-nostro-processo/" %}
       {% endif %}
     
-      <a href="{{ languageUrl }}" class="language-toggle" aria-label="Switch to English">
-        <img src="/assets/svgs/gb.svg" alt="" width="24" height="18">
+      <a href="{{ languageUrl }}" class="language-toggle" aria-label="Passa all'italiano">
+        <img src="/assets/svgs/it.svg" alt="" width="24" height="18">
       </a>
     
     {% else %}
@@ -111,8 +117,8 @@
         {% set languageUrl = "/en/our-process/" %}
       {% endif %}
     
-      <a href="{{ languageUrl }}" class="language-toggle" aria-label="Passa all'italiano">
-        <img src="/assets/svgs/it.svg" alt="" width="24" height="18">
+      <a href="{{ languageUrl }}" class="language-toggle" aria-label="Switch to English">
+        <img src="/assets/svgs/gb.svg" alt="" width="24" height="18">
       </a>
     
     {% endif %}
