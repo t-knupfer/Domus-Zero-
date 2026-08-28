@@ -6,52 +6,52 @@
     <div class="cs-container">
         <div class="cs-left-section">
             <h2 class="cs-title">
-                {% if "/it/" in page.url %}
-                    Inizia oggi la tua transizione energetica
-                {% else %}
+                {% if "/en/" in page.url %}
                     Start Your Energy Transition Today
+                {% else %}
+                    Inizia oggi la tua transizione energetica
                 {% endif %}
             </h2>
 
-            <a href="{% if '/it/' in page.url %}/it/contatto/{% else %}/contact/{% endif %}" class="cs-button-solid">
-                {% if "/it/" in page.url %}
-                    Contattaci oggi
-                {% else %}
+            <a href="{% if '/en/' in page.url %}/en/contact/{% else %}/contatto/{% endif %}" class="cs-button-solid">
+                {% if "/en/" in page.url %}
                     Contact Us Now
+                {% else %}
+                    Contattaci oggi
                 {% endif %}
             </a>
         </div>
 
         <div class="cs-content">
             <span class="cs-header">
-                {% if "/it/" in page.url %}
-                    Orari disponibili
-                {% else %}
+                {% if "/en/" in page.url %}
                     Available Hours
+                {% else %}
+                    Orari disponibili
                 {% endif %}
             </span>
 
             <p class="cs-p">
-                {% if "/it/" in page.url %}
-                    Online: 24 ore su 24, 7 giorni su 7
-                {% else %}
+                {% if "/en/" in page.url %}
                     Online: 24/7
+                {% else %}
+                    Online: 24 ore su 24, 7 giorni su 7
                 {% endif %}
                 <br>
             </p>
 
             <p class="cs-p">
-                {% if "/it/" in page.url %}
-                    Per telefono: Tutti i giorni dalle 9:00 alle 18:00
+                {% if "/en/" in page.url %}
+                    By phone: Every day from 9am-6pm
                 {% else %}
-                    Per phone: Everyday from 9am-6pm
+                    Per telefono: Tutti i giorni dalle 9:00 alle 18:00
                 {% endif %}
             </p>
         </div>
 
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="../assets/images/solar_trailer_car.JPG">
-            <source media="(min-width: 601px)" srcset="../assets/images/solar_trailer_car.JPG">
+            <source media="(max-width: 600px)" srcset="/assets/images/solar_trailer_car.JPG">
+            <source media="(min-width: 601px)" srcset="/assets/images/solar_trailer_car.JPG">
             <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg" alt="appliance" width="275" height="132">
         </picture>
     </div>
