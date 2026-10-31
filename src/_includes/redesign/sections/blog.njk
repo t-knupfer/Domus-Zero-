@@ -1,0 +1,7 @@
+{% if section.useExistingPosts %}{% set posts = collections.post | reverse %}{% else %}{% set posts = section.posts %}{% endif %}
+{% if posts.length %}<div class="dz-grid dz-cols-{{ section.columns | default(3) | escape }}">
+{% for post in posts %}<article class="dz-card dz-image-card">
+{% if post.data.image %}<img src="{{ post.data.image | escape }}" alt="{{ post.data.imageAlt | default('') | escape }}" width="600" height="400" loading="lazy">{% endif %}
+<div class="dz-card-body"><p class="dz-meta">{{ post.data.author | escape }}</p><h3><a href="{{ post.url | escape }}">{{ post.data.title | escape }}</a></h3><p>{{ post.data.description | escape }}</p><a class="dz-text-link" href="{{ post.url | escape }}">{{ 'Leggi l’articolo' if italian else 'Read article' }} →</a></div>
+</article>{% endfor %}</div>
+{% else %}<p class="dz-empty">{{ 'Gli articoli saranno pubblicati qui.' if italian else 'Articles will appear here once published.' }}</p>{% endif %}

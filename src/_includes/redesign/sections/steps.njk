@@ -1,0 +1,3 @@
+<ol class="dz-steps dz-steps-even" style="--step-rows: {{ (section.items.length / 2) | round(0, 'ceil') }}">
+{% for item in section.items %}<li><span class="dz-step-number" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ item.title | escape }}</h3><p>{{ item.text | escape }}</p>{% if item.image %}<figure class="dz-photo dz-step-photo"><img src="{{ item.image.src | escape }}" alt="{{ item.image.alt | escape }}" width="{{ item.image.width }}" height="{{ item.image.height }}" loading="lazy" decoding="async">{% if item.image.representative %}{% include "redesign/representative-label.njk" %}{% endif %}</figure>{% endif %}</div></li>{% endfor %}
+</ol>

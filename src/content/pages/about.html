@@ -1,73 +1,11 @@
 ---
-title: 'About Us'
-description: 'Learn about Domus Zero and how we help our clients reduce energy costs and move away from fossil fuels by delivering solar PV and heat pump solutions for homes and agriturismos across Chianti, Siena, and the rest of Tuscany'
-preloadImg: '/assets/images/lightbulb_nature.jpg'
-permalink: 'en/about/'
+title: About Us
+description: Learn about Domus Zero and how we help our clients reduce energy costs and move away from fossil fuels
+  by delivering solar PV and heat pump solutions for homes and agriturismos across Chianti, Siena, and the rest
+  of Tuscany
+
+permalink: en/about/
+layout: redesign/page.njk
+language: en
+alternateUrl: /chi-siamo/
 ---
-
-{% extends "layouts/base.html" %}
-
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-{% endblock %}
-
-{% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">About Domus Zero</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/lightbulb_nature.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/lightbulb_nature.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/lightbulb_nature.jpg" alt="lightbulb in nature" loading="eager" width="2500" height="1667">
-        </picture>
-
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/tuscany_villa_standalone.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/tuscany_villa_standalone.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/tuscany_villa_standalone.jpg" alt="Tuscan villa" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/solar_install.JPG">
-                    <source media="(min-width: 601px)" srcset="/assets/images/solar_install.JPG">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/solar_install.JPG" alt="Solar PV installation in Tuscany" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">Based in Tuscany</span>
-                <h2 class="cs-title">Local Expertise in Sustainable Energy</h2>
-                <p class="cs-text">
-                    Domus Zero helps home- and agriturismo-owners transition to efficient, integrated solar PV and heat pump systems tailored to their properties.
-                </p>
-                <p class="cs-text">
-                    Based in Tuscany, we work with clients across the region, including Chianti, Greve, Impruneta and Siena, and across Italy, combining local knowledge with a reliable, carefully managed approach to sustainable energy projects.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        Our experience spans hundreds of successfully completed sustainable energy projects. We have used that experience to refine how solar and heat pump projects are planned and installed, with a focus on reliability, quality and a positive business case for our clients.
-                    </p>
-                    <span class="cs-name">Stefan Knupfer</span>
-                    <span class="cs-job">Founder & CEO</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="" width="136" height="77">
-                </div>
-                <a href="/en/our-process/" class="cs-button-solid">Our Process</a>
-            </div>
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
-
-{% endblock %}

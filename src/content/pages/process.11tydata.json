@@ -1,0 +1,60 @@
+{
+  "heading": "Our Turnkey Process",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "why-choose-1662",
+      "type": "steps",
+      "title": "Make Your Home or Agriturismo Sustainable in Weeks",
+      "items": [
+        {
+          "title": "Contact Us",
+          "text": "Contact us by phone, email or through the website. We will ask for some basic information about your property, such as recent energy bills, the address, photos of the building and details of your existing energy systems."
+        },
+        {
+          "title": "Initial Video Consultation",
+          "text": "We will review the information you provide and discuss your property, current energy system, objectives and any initial questions about solar PV, heat pumps or the installation process."
+        },
+        {
+          "title": "Remote Feasibility Analysis",
+          "text": "We carry out an initial feasibility analysis based on the location, Comune, available space, existing energy systems and other relevant characteristics of your property."
+        },
+        {
+          "title": "Site Visit",
+          "text": "We schedule a three-hour site visit to collect the technical information required to design the appropriate solar PV and heat pump solution for your property."
+        },
+        {
+          "title": "Tailored Solution & Fixed-Price Proposal",
+          "text": "We develop a detailed solution tailored to your property and provide a clear, fixed-price proposal. Once you accept the offer, we prepare the detailed implementation plan and installation schedule."
+        },
+        {
+          "title": "High-Quality Installation",
+          "text": "We install the integrated solar PV and heat pump system with a focus on quality, reliability and minimal disruption to your home or agriturismo."
+        },
+        {
+          "title": "Turnkey Handoff",
+          "text": "We hand over the finished system, a fully implemented turnkey solution tailored to your property."
+        },
+        {
+          "title": "Support",
+          "text": "Post-installation support as needed and requested by you."
+        }
+      ]
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Start Your Energy Transition Today",
+      "availability": {
+        "title": "Available Hours",
+        "lines": [
+          "Online: 24/7",
+          "By phone: Every day from 9 a.m. to 6 p.m."
+        ]
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "Turnkey Solar & Heat Pump Installation Process"
+}

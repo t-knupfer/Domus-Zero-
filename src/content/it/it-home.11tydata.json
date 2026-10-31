@@ -1,0 +1,183 @@
+{
+  "heading": "Fotovoltaico e pompe di calore chiavi in mano per la tua casa o il tuo agriturismo",
+  "heroId": "hero-856",
+  "sections": [
+    {
+      "id": "sbs",
+      "type": "split",
+      "tone": "light",
+      "title": "Soluzioni energetiche sostenibili per immobili in Italia",
+      "paragraphs": [
+        "Aiutiamo i proprietari di case e agriturismi in Toscana a passare a sistemi fotovoltaici e pompe di calore efficienti e integrati, progettati su misura per i loro immobili.",
+        "Il nostro obiettivo è ridurre i costi energetici, il consumo di combustibili fossili e le emissioni di carbonio, rendendo al tempo stesso la transizione il più semplice e affidabile possibile."
+      ],
+      "items": [],
+      "imageSide": "left",
+      "eyebrow": "Chi siamo",
+      "link": {
+        "href": "/il-nostro-processo/",
+        "label": "Il nostro processo"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/img-8286.webp",
+          "alt": "Pensilina fotovoltaica tra alberi e arbusti del giardino",
+          "width": 1050,
+          "height": 1400,
+          "representative": false
+        },
+        {
+          "src": "/assets/images/display/luxurious-home-with-pv.webp",
+          "alt": "Casa di campagna in pietra con pannelli fotovoltaici sul tetto",
+          "width": 1400,
+          "height": 1050,
+          "representative": true
+        }
+      ],
+      "naturalImages": true
+    },
+    {
+      "id": "services-1354",
+      "type": "cards",
+      "columns": 4,
+      "tone": "muted",
+      "title": "Garantiamo servizi di alta qualità",
+      "items": [
+        {
+          "title": "Sistemi integrati di fotovoltaico e pompe di calore",
+          "link": {
+            "href": "/i-nostri-servizi/"
+          },
+          "image": "/assets/images/display/completed-turnkey-system-pv-plus-heat-pump.webp",
+          "imageAlt": "Pannelli fotovoltaici e pompa di calore esterna presso una casa in pietra",
+          "imageWidth": 1400,
+          "imageHeight": 933,
+          "representative": true
+        },
+        {
+          "title": "Alta qualità, efficienza e affidabilità",
+          "link": {
+            "href": "/i-nostri-servizi/"
+          },
+          "image": "/assets/images/display/img-8274.webp",
+          "imageAlt": "Due unità esterne a pompa di calore accanto a un giardino",
+          "imageWidth": 1050,
+          "imageHeight": 1400,
+          "representative": false,
+          "imageBottom": true
+        },
+        {
+          "title": "Installazione chiavi in mano con prezzo fisso",
+          "link": {
+            "href": "/i-nostri-servizi/"
+          },
+          "image": "/assets/images/display/solar-install.webp",
+          "imageAlt": "Installatore con guanti grigi e blu al lavoro su un pannello fotovoltaico",
+          "imageWidth": 1400,
+          "imageHeight": 933,
+          "representative": false
+        },
+        {
+          "title": "Assistenza continuativa e manutenzione opzionale per tutta la vita utile dell'impianto",
+          "link": {
+            "href": "/i-nostri-servizi/"
+          },
+          "image": "/assets/images/display/treelined-drive.webp",
+          "imageAlt": "Viale di cipressi che si estende in lontananza",
+          "imageWidth": 1050,
+          "imageHeight": 1400,
+          "representative": false
+        }
+      ]
+    },
+    {
+      "id": "sbs-r-869",
+      "type": "split",
+      "tone": "light",
+      "title": "Una soluzione energetica completa chiavi in mano",
+      "paragraphs": [
+        "Domus Zero gestisce il tuo progetto fotovoltaico e con pompa di calore dalla valutazione iniziale fino all'installazione e all'assistenza continuativa."
+      ],
+      "items": [
+        "Valutazione del tuo immobile e sviluppo di una soluzione fotovoltaica e con pompa di calore su misura",
+        "Collaborazione proattiva con il Comune e il gestore locale dell'energia per individuare le soluzioni sostenibili più adatte alla tua abitazione",
+        "Progettazione e installazione integrate di impianti fotovoltaici e pompe di calore",
+        "Apparecchiature di alta qualità, efficienti e affidabili, selezionate per il tuo immobile",
+        "Pianificazione chiara del progetto e offerte a prezzo fisso",
+        "Gestione di permessi, pratiche amministrative e rimozione degli impianti sostituiti",
+        "Installazione pianificata per ridurre al minimo i disagi nella tua casa o nel tuo agriturismo",
+        "Opzionale: Servizi di manutenzione e assistenza periodica per gli impianti installati"
+      ],
+      "imageSide": "right",
+      "eyebrow": "I nostri servizi",
+      "link": {
+        "href": "/contatto/",
+        "label": "Prenota una consulenza"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/tuscan-home-with-rooftop-pv.webp",
+          "alt": "Casa in pietra con pannelli fotovoltaici su un tetto in tegole",
+          "width": 1400,
+          "height": 933,
+          "representative": true
+        },
+        {
+          "src": "/assets/images/display/installation-inverter-battery.webp",
+          "alt": "Illustrazione di un tecnico al lavoro su inverter e accumulo",
+          "width": 1400,
+          "height": 933,
+          "representative": true
+        }
+      ],
+      "naturalImages": true
+    },
+    {
+      "id": "why-choose-289",
+      "type": "callouts",
+      "columns": 3,
+      "tone": "muted",
+      "title": "Il passaggio più affidabile verso una casa sostenibile",
+      "items": [
+        {
+          "title": "Una transizione senza pensieri",
+          "text": "Ci occupiamo noi di tutti i dettagli, così non devi farlo tu. Rendi il tuo immobile più sostenibile riducendo al minimo i disagi nella tua vita quotidiana."
+        },
+        {
+          "title": "Servizio chiavi in mano tutto compreso",
+          "text": "Pianifichiamo il progetto con il tuo Comune e il gestore locale dell'energia elettrica, richiediamo gli incentivi statali, smaltiamo i vecchi impianti, installiamo un sistema sostenibile completamente integrato e, su richiesta, effettuiamo la manutenzione periodica."
+        },
+        {
+          "title": "Realizzazione del progetto in poche settimane",
+          "text": "Dalla prima consulenza alla conclusione dell’installazione nell'arco di poche settimane."
+        }
+      ]
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "muted",
+      "title": "Inizia oggi la tua transizione energetica",
+      "availability": {
+        "title": "Orari disponibili",
+        "lines": [
+          "Online: 24 ore su 24, 7 giorni su 7",
+          "Per telefono: Tutti i giorni dalle 9:00 alle 18:00"
+        ]
+      }
+    }
+  ],
+  "eyebrow": "Soluzioni fotovoltaiche e pompe di calore per la tua proprietà in Italia",
+  "introduction": "Domus Zero realizza impianti fotovoltaici e pompe di calore completamente integrati e particolarmente affidabili per case e agriturismi in Toscana e in tutta Italia, aiutando i proprietari a ridurre i costi energetici, l'uso di combustibili fossili e le emissioni di CO2.",
+  "heroLink": {
+    "href": "/contatto/",
+    "label": "Prenota una consulenza"
+  },
+  "heroImage": {
+    "src": "/assets/images/display/attractive-modest-home-with-pv-by-pool.webp",
+    "alt": "Casa in stile toscano con pannelli fotovoltaici sul tetto e piscina",
+    "width": 1400,
+    "height": 933,
+    "representative": true
+  }
+}

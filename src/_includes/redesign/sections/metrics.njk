@@ -1,0 +1,10 @@
+{% if section.items.length %}<dl class="dz-metrics">{% for item in section.items %}<div><dt>{{ item.label | escape }}</dt><dd>{{ item.value | escape }}</dd>{% if item.detail %}<p>{{ item.detail | escape }}</p>{% endif %}</div>{% endfor %}</dl>{% endif %}
+{% if section.chart %}
+<figure class="dz-chart">
+<figcaption>{{ section.chart.title | escape }}</figcaption>
+<ul>{% for row in section.chart.rows %}<li><strong>{{ row.label | escape }}</strong>
+<div class="dz-chart-row"><span>{{ 'Prima' if italian else 'Before' }}</span><div class="dz-bar-track" aria-hidden="true"><div class="dz-bar-before" style="width: {{ 100 * row.before / (section.chart.max | default(1, true)) }}%"></div></div><span>{{ row.before | escape }} {{ section.chart.unit | escape }}</span></div>
+<div class="dz-chart-row"><span>{{ 'Dopo' if italian else 'After' }}</span><div class="dz-bar-track" aria-hidden="true"><div class="dz-bar-after" style="width: {{ 100 * row.after / (section.chart.max | default(1, true)) }}%"></div></div><span>{{ row.after | escape }} {{ section.chart.unit | escape }}</span></div>
+</li>{% endfor %}</ul>
+</figure>{% endif %}
+{% if section.note %}<p class="dz-note">{{ section.note | escape }}</p>{% endif %}

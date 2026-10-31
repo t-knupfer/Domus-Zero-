@@ -1,0 +1,63 @@
+{
+  "heading": "Solar PV & Heat Pump Services",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "sbs-r-869",
+      "type": "split",
+      "tone": "light",
+      "title": "Integrated, Turnkey Energy Solutions",
+      "paragraphs": [
+        "Domus Zero manages your solar PV, heat pump and battery storage project from initial assessment through installation and ongoing support."
+      ],
+      "items": [
+        "Assessment of your property and development of a tailored solar PV, battery storage and heat pump solution",
+        "Coordination with your Comune and local electricity provider",
+        "Integrated design and installation of solar PV, battery storage and heat pump systems",
+        "High-quality, efficient and reliable equipment selected for your property",
+        "Clear project planning and fixed-price proposals",
+        "Management of permits, administration and removal of replaced equipment",
+        "Installation planned to minimize disruption to your home or agriturismo",
+        "Optional ongoing maintenance and support after installation"
+      ],
+      "imageSide": "left",
+      "link": {
+        "href": "/en/contact/",
+        "label": "Schedule A Consultation"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/img-8281.webp",
+          "alt": "Solar PV canopy above residential parking",
+          "width": 1400,
+          "height": 1050,
+          "representative": false
+        },
+        {
+          "src": "/assets/images/display/img-8274.webp",
+          "alt": "Two outdoor heat pump units beside a garden",
+          "width": 1050,
+          "height": 1400,
+          "representative": false
+        }
+      ],
+      "naturalImages": true,
+      "paragraphsFullWidth": true
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Start Your Energy Transition Today",
+      "availability": {
+        "title": "Available Hours",
+        "lines": [
+          "Online: 24/7",
+          "By phone: Every day from 9 a.m. to 6 p.m."
+        ]
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "Our Services"
+}

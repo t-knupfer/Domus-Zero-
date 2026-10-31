@@ -1,0 +1,3 @@
+{% if section.items.length %}<div class="dz-faq">
+{% for item in section.items %}<details><summary>{{ item.question | escape }}</summary><div><p>{{ item.answer | escape }}</p></div></details>{% endfor %}
+</div>{% else %}<p class="dz-empty">{{ 'Le domande frequenti saranno aggiunte qui.' if italian else 'Frequently asked questions will be added here.' }}</p>{% endif %}

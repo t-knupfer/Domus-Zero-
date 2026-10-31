@@ -1,0 +1,203 @@
+{
+  "sections": [
+    {
+      "id": "metrics",
+      "type": "metrics",
+      "tone": "muted",
+      "eyebrow": "09 · Statistics and charts",
+      "title": "Put the numbers in context.",
+      "intro": "Illustrative data for the template, not measured customer results.",
+      "items": [
+        {
+          "label": "Example solar array",
+          "value": "6 kWp",
+          "detail": "Illustrative capacity"
+        },
+        {
+          "label": "Example annual bill before",
+          "value": "€3,200",
+          "detail": "Demonstration data"
+        },
+        {
+          "label": "Example annual bill after",
+          "value": "€1,100",
+          "detail": "Demonstration data"
+        }
+      ],
+      "chart": {
+        "title": "Example annual energy costs",
+        "max": 4000,
+        "unit": "€/year",
+        "rows": [
+          {
+            "label": "Example property A",
+            "before": 3200,
+            "after": 1100
+          },
+          {
+            "label": "Example property B",
+            "before": 2800,
+            "after": 1400
+          }
+        ]
+      },
+      "note": "Example values only. Replace them with verified project data before publication."
+    },
+    {
+      "id": "comparison",
+      "type": "table",
+      "eyebrow": "10 · Comparison and data tables",
+      "title": "Make options easy to compare.",
+      "caption": "Illustrative cost comparison — not a quote",
+      "columns": [
+        "Example system",
+        "Gross cost",
+        "Assumed incentives",
+        "Net cost"
+      ],
+      "rows": [
+        {
+          "label": "Solar PV",
+          "values": [
+            "€10,500",
+            "€5,250",
+            "€5,250"
+          ]
+        },
+        {
+          "label": "Heat pump",
+          "values": [
+            "€9,800",
+            "€6,370",
+            "€3,430"
+          ]
+        },
+        {
+          "label": "Integrated system",
+          "values": [
+            "€18,400",
+            "€11,000",
+            "€7,400"
+          ],
+          "highlight": true
+        }
+      ],
+      "note": "Figures are copied from the supplied mock-up as examples. Incentive eligibility and rates have not been confirmed."
+    },
+    {
+      "id": "pricing",
+      "type": "pricing",
+      "tone": "muted",
+      "eyebrow": "11 · Pricing cards",
+      "title": "A clear starting point for each option.",
+      "intro": "Example ranges from the mock-up. These are layout demonstrations, not approved prices.",
+      "items": [
+        {
+          "title": "Solar PV",
+          "text": "An example solar package.",
+          "price": "€8,000–€14,000",
+          "unit": "illustrative installation range",
+          "features": [
+            "Solar panels and inverter",
+            "Example installation scope",
+            "Final design after assessment"
+          ],
+          "link": {
+            "href": "/en/contact/",
+            "label": "Discuss solar PV"
+          }
+        },
+        {
+          "title": "Integrated system",
+          "text": "Solar PV and a heat pump together.",
+          "price": "€15,000–€28,000",
+          "unit": "illustrative installation range",
+          "badge": "Featured example",
+          "featured": true,
+          "features": [
+            "Combined solar and heating design",
+            "Example administration scope",
+            "Final design after assessment"
+          ],
+          "link": {
+            "href": "/en/contact/",
+            "label": "Discuss your system"
+          }
+        },
+        {
+          "title": "Heat pump",
+          "text": "An example heating package.",
+          "price": "€9,000–€16,000",
+          "unit": "illustrative installation range",
+          "features": [
+            "Heat pump and controls",
+            "Example installation scope",
+            "Final design after assessment"
+          ],
+          "link": {
+            "href": "/en/contact/",
+            "label": "Discuss heating"
+          }
+        }
+      ],
+      "note": "Replace example pricing with approved ranges before publishing."
+    },
+    {
+      "id": "financial",
+      "type": "financial",
+      "eyebrow": "12 · Financial summaries",
+      "title": "Show how the total is built.",
+      "benefits": [
+        {
+          "title": "Example heat-pump incentive",
+          "value": "65%",
+          "text": "Demonstration assumption from the mock-up, not confirmed eligibility."
+        },
+        {
+          "title": "Example solar incentive",
+          "value": "50%",
+          "text": "Demonstration assumption from the mock-up, not confirmed eligibility."
+        }
+      ],
+      "summary": {
+        "label": "Illustrative project breakdown",
+        "rows": [
+          {
+            "label": "Gross system cost",
+            "value": "€18,400"
+          },
+          {
+            "label": "Example heat-pump incentive",
+            "value": "−€7,800"
+          },
+          {
+            "label": "Example solar incentive",
+            "value": "−€3,200"
+          }
+        ],
+        "totalLabel": "Example net cost",
+        "total": "€7,400",
+        "details": [
+          {
+            "label": "Example annual savings",
+            "value": "€2,100"
+          },
+          {
+            "label": "Simple payback",
+            "value": "3.5 years"
+          }
+        ]
+      },
+      "note": "Illustrative arithmetic only. Actual eligibility, payment timing, and project costs must be confirmed."
+    },
+    {
+      "id": "calculator",
+      "type": "calculator",
+      "tone": "muted",
+      "eyebrow": "13 · Interactive calculator",
+      "title": "Explore an illustrative estimate.",
+      "intro": "Change the inputs to see the example model respond. This is a working template prototype, not a validated quotation or engineering assessment."
+    }
+  ],
+  "calculator": true
+}

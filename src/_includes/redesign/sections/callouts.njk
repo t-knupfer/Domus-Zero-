@@ -1,0 +1,7 @@
+<div class="dz-grid dz-cols-{{ section.columns | default(3) | escape }}">
+{% for item in section.items %}<article class="dz-card dz-callout">
+{% if item.value %}<p class="dz-value">{{ item.value | escape }}</p>{% else %}<span class="dz-callout-mark" aria-hidden="true">→</span>{% endif %}
+<h3>{{ item.title | escape }}</h3><p>{{ item.text | escape }}</p>
+{% if item.link %}<a class="dz-text-link" href="{{ item.link.href | escape }}">{{ item.link.label | escape }} <span aria-hidden="true">→</span></a>{% endif %}
+</article>{% endfor %}
+</div>

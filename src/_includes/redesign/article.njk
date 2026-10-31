@@ -1,0 +1,9 @@
+---
+layout: redesign/base.njk
+---
+<article class="dz-article dz-container">
+<header><p class="dz-eyebrow">{{ 'Approfondimenti' if language == 'it' else 'Journal' }}</p><h1>{{ title | escape }}</h1>{% if description %}<p class="dz-lead">{{ description | escape }}</p>{% endif %}{% if author %}<p class="dz-meta">{{ author | escape }}{% if publishedLabel %} · {{ publishedLabel | escape }}{% endif %}</p>{% endif %}</header>
+{% if image %}<img class="dz-article-image" src="{{ image | escape }}" alt="{{ imageAlt | default('') | escape }}" width="1200" height="675">{% endif %}
+<div class="dz-prose">{{ content | safe }}</div>
+{% if backUrl %}<a class="dz-button dz-button-outline" href="{{ backUrl | escape }}">{{ 'Tutti gli articoli' if language == 'it' else 'All articles' }} <span aria-hidden="true">→</span></a>{% endif %}
+</article>

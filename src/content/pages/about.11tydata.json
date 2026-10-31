@@ -1,0 +1,61 @@
+{
+  "heading": "About Domus Zero",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "sbs",
+      "type": "split",
+      "tone": "light",
+      "title": "Local Expertise in Sustainable Energy",
+      "paragraphs": [
+        "Domus Zero helps home- and agriturismo-owners transition to efficient, integrated solar PV and heat pump systems tailored to their properties.",
+        "Based in Tuscany, we work with clients across the region, including Chianti, Greve, Impruneta and Siena, and across Italy, combining local knowledge with a reliable, carefully managed approach to sustainable energy projects."
+      ],
+      "items": [],
+      "imageSide": "left",
+      "eyebrow": "Based in Tuscany",
+      "link": {
+        "href": "/en/our-process/",
+        "label": "Our Process"
+      },
+      "quote": {
+        "text": "Our experience spans hundreds of successfully completed sustainable energy projects. We have used that experience to refine how solar and heat pump projects are planned and installed, with a focus on reliability, quality and a positive business case for our clients.",
+        "name": "Stefan Knupfer",
+        "role": "Founder & CEO"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/img-8288.webp",
+          "alt": "Solar panels above a hedge with mature pine trees behind",
+          "width": 1400,
+          "height": 1050,
+          "representative": false
+        },
+        {
+          "src": "/assets/images/display/group-of-homes-one-with-pv.webp",
+          "alt": "Stone homes with solar panels on one roof",
+          "width": 1400,
+          "height": 933,
+          "representative": true
+        }
+      ],
+      "naturalImages": true,
+      "paragraphsFullWidth": true
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Start Your Energy Transition Today",
+      "availability": {
+        "title": "Available Hours",
+        "lines": [
+          "Online: 24/7",
+          "By phone: Every day from 9 a.m. to 6 p.m."
+        ]
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "About Us"
+}

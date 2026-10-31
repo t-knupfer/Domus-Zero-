@@ -1,0 +1,24 @@
+<div class="dz-contact{% if section.detailsOnly %} dz-contact-details{% if not section.image %} dz-contact-no-photo{% endif %}{% endif %}">
+<div class="dz-contact-info">
+{% if not section.closingAtBottom %}<h3>{{ 'Parliamo della tua casa.' if italian else 'Let’s talk about your home.' }}</h3>{% endif %}
+<p><span class="dz-contact-label">Email</span><a href="mailto:{{ client.email | escape }}">{{ client.email | escape }}</a></p>
+<p><span class="dz-contact-label">{{ 'Telefono' if italian else 'Phone' }}</span><a href="tel:{{ client.phonePrimaryForTel | replace(' ', '') | escape }}">{{ client.phonePrimaryFormatted | escape }}</a></p>
+<address><span class="dz-contact-label">{{ 'Indirizzo' if italian else 'Address' }}</span>{% if section.addressLines %}{% for line in section.addressLines %}{{ line | escape }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% else %}{{ client.address.lineOne | escape }}<br>{{ client.address.lineTwo | escape }}<br>{{ client.address.lineThree | escape }}<br>{{ client.address.zip | escape }} {{ client.address.city | escape }} {{ client.address.state | escape }}, {{ ('Italia' if italian and client.address.country == 'Italy' else client.address.country) | escape }}{% endif %}</address>
+{% if section.mapUrl %}<p><a class="dz-text-link" href="{{ section.mapUrl | escape }}">{{ 'Indicazioni' if italian else 'Directions' }} →</a></p>{% endif %}
+{% if section.closingAtBottom %}<h3 class="dz-contact-closing">{{ 'Parliamo della tua casa.' if italian else 'Let’s talk about your home.' }}</h3>{% endif %}
+</div>
+{% if section.detailsOnly %}
+{% if section.image %}<figure class="dz-contact-photo"><img src="{{ section.image.src | escape }}" alt="{{ section.image.alt | default('') | escape }}" width="{{ section.image.width | default(900) }}" height="{{ section.image.height | default(900) }}" loading="lazy" decoding="async"></figure>{% endif %}
+{% else %}
+<form method="post"{% if section.action %} action="{{ section.action | escape }}"{% endif %} aria-describedby="form-note-{{ sectionIndex }}">
+<p class="dz-note" id="form-note-{{ sectionIndex }}">{% if section.action %}{{ section.note | escape }}{% else %}{{ 'Anteprima del modulo: invio non ancora configurato.' if italian else 'Form preview: submission handling has not been configured.' }}{% endif %}</p>
+<fieldset{% if not section.action %} disabled{% endif %}><legend class="dz-sr-only">{{ 'Richiesta di contatto' if italian else 'Contact inquiry' }}</legend>
+<div class="dz-form-row"><label>{{ 'Nome' if italian else 'Name' }}<input name="name" autocomplete="name" required></label><label>Email<input name="email" type="email" autocomplete="email" required></label></div>
+<label>{{ 'Telefono (facoltativo)' if italian else 'Phone (optional)' }}<input name="phone" type="tel" autocomplete="tel"></label>
+<label>{{ 'Messaggio' if italian else 'Message' }}<textarea name="message" rows="5" required></textarea></label>
+{% if section.privacyUrl %}<p class="dz-note"><a href="{{ section.privacyUrl | escape }}">{{ 'Informativa privacy' if italian else 'Privacy notice' }}</a></p>{% endif %}
+<button class="dz-button" type="submit">{{ 'Invia richiesta' if italian else 'Send inquiry' }} <span aria-hidden="true">→</span></button>
+</fieldset>
+</form>
+{% endif %}
+</div>

@@ -1,0 +1,61 @@
+{
+  "heading": "Chi Siamo",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "sbs",
+      "type": "split",
+      "tone": "light",
+      "title": "Esperienza locale nell'energia sostenibile",
+      "paragraphs": [
+        "Domus Zero aiuta i proprietari di case e agriturismi a passare a sistemi fotovoltaici e pompe di calore efficienti e integrati, progettati su misura per i loro immobili.",
+        "Con sede in Toscana, lavoriamo con clienti in tutta la regione, tra cui Chianti, Greve, Impruneta e Siena, e nel resto d'Italia, combinando la conoscenza del territorio con un approccio affidabile e attentamente gestito ai progetti di energia sostenibile."
+      ],
+      "items": [],
+      "imageSide": "left",
+      "eyebrow": "Con sede in Toscana",
+      "link": {
+        "href": "/il-nostro-processo/",
+        "label": "Il nostro processo"
+      },
+      "quote": {
+        "text": "La nostra esperienza comprende centinaia di progetti di energia sostenibile completati con successo. Abbiamo utilizzato questa esperienza per perfezionare il modo in cui i progetti fotovoltaici e con pompe di calore vengono pianificati e realizzati, con particolare attenzione all'affidabilità, alla qualità e a un business case positivo per i nostri clienti.",
+        "name": "Stefan Knupfer",
+        "role": "Fondatore & CEO"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/img-8288.webp",
+          "alt": "Pannelli fotovoltaici sopra una siepe con pini sullo sfondo",
+          "width": 1400,
+          "height": 1050,
+          "representative": false
+        },
+        {
+          "src": "/assets/images/display/group-of-homes-one-with-pv.webp",
+          "alt": "Case in pietra con pannelli fotovoltaici su uno dei tetti",
+          "width": 1400,
+          "height": 933,
+          "representative": true
+        }
+      ],
+      "naturalImages": true,
+      "paragraphsFullWidth": true
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Inizia oggi la tua transizione energetica",
+      "availability": {
+        "title": "Orari disponibili",
+        "lines": [
+          "Online: 24 ore su 24, 7 giorni su 7",
+          "Per telefono: Tutti i giorni dalle 9:00 alle 18:00"
+        ]
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "Chi Siamo"
+}

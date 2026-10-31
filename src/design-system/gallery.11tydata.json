@@ -1,0 +1,462 @@
+{
+  "sections": [
+    {
+      "id": "text-images",
+      "type": "split",
+      "eyebrow": "01 · Text + one image",
+      "title": "A solution designed around your home.",
+      "paragraphs": [
+        "Domus Zero manages your solar and heat pump project from initial assessment through installation and ongoing support.",
+        "Use this section for your most common page content: a clear explanation alongside one image, or a pair of complementary photographs."
+      ],
+      "items": [
+        "Tailored solar PV and heat pump solutions",
+        "Clear project planning and fixed-price proposals",
+        "Optional ongoing maintenance and support"
+      ],
+      "link": {
+        "href": "/en/contact/",
+        "label": "Discuss your home"
+      }
+    },
+    {
+      "id": "two-images",
+      "type": "split",
+      "tone": "muted",
+      "eyebrow": "01 · Alternate arrangement",
+      "title": "Two images. One connected story.",
+      "imageSide": "left",
+      "paragraphs": [
+        "Solar PV and heat pumps work together as an integrated system. This variation pairs two images with supporting text.",
+        "Choose whether the images sit on the left or right. On small screens the section becomes a single, readable column."
+      ]
+    },
+    {
+      "id": "process",
+      "type": "steps",
+      "eyebrow": "02 · Two-column lists",
+      "title": "From first conversation to handoff.",
+      "intro": "The eight steps below use the current English process page’s content. Reading order runs down the left column, then down the right.",
+      "items": [
+        {
+          "title": "Contact Us",
+          "text": "Contact us by phone, email or through the website. We will ask for some basic information about your property, such as recent energy bills, the address, photos of the building and details of your existing energy systems."
+        },
+        {
+          "title": "Initial Video Consultation",
+          "text": "We will review the information you provide and discuss your property, current energy system, objectives and any initial questions about solar PV, heat pumps or the installation process."
+        },
+        {
+          "title": "Remote Feasibility Analysis",
+          "text": "We carry out an initial feasibility analysis based on the location, Comune, available space, existing energy systems and other relevant characteristics of your property."
+        },
+        {
+          "title": "Site Visit",
+          "text": "We schedule a three-hour site visit to collect the technical information required to design the appropriate solar PV and heat pump solution for your property."
+        },
+        {
+          "title": "Tailored Solution & Fixed-Price Proposal",
+          "text": "We develop a detailed solution tailored to your property and provide a clear, fixed-price proposal. Once you accept the offer, we prepare the detailed implementation plan and installation schedule."
+        },
+        {
+          "title": "High-Quality Installation",
+          "text": "We install the integrated solar PV and heat pump system with a focus on quality, reliability and minimal disruption to your home or agriturismo."
+        },
+        {
+          "title": "Turnkey Handoff",
+          "text": "We hand over the finished system, a fully implemented turnkey solution tailored to your property."
+        },
+        {
+          "title": "Support",
+          "text": "Post-installation support as needed and requested by you."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "tone": "muted",
+      "eyebrow": "03 · Contact",
+      "title": "A conversation starts here."
+    },
+    {
+      "id": "services",
+      "type": "cards",
+      "columns": 4,
+      "eyebrow": "04 · Image cards · Four columns",
+      "title": "Your services, at a glance.",
+      "items": [
+        {
+          "title": "Integrated solar PV and heat pump systems"
+        },
+        {
+          "title": "Efficient and reliable equipment"
+        },
+        {
+          "title": "Turnkey installation"
+        },
+        {
+          "title": "Ongoing support"
+        }
+      ]
+    },
+    {
+      "id": "why-us",
+      "type": "callouts",
+      "columns": 3,
+      "tone": "dark",
+      "eyebrow": "05 · Callout boxes · Three columns",
+      "title": "A carefree transition.",
+      "intro": "Three callouts drawn from the current homepage. The same component supports four columns and optional numerical highlights.",
+      "items": [
+        {
+          "title": "A Carefree Transition",
+          "text": "We take care of all the details, so you don't have to. Switch to a sustainable home with minimal disruption to your daily life."
+        },
+        {
+          "title": "All-Inclusive Turnkey Service",
+          "text": "We plan with your Comune and local electricity provider, apply for government subsidies, dispose of old systems, install a fully integrated sustainable system, and carry out regular servicing if requested."
+        },
+        {
+          "title": "From Assessment to Completion in Weeks",
+          "text": "We can move from the initial consultation to completed installation within a matter of weeks."
+        }
+      ]
+    },
+    {
+      "id": "journal",
+      "type": "blog",
+      "columns": 3,
+      "eyebrow": "06 · Blog listing",
+      "title": "Room for useful stories.",
+      "intro": "An article layout example; replace it with approved posts when the blog is ready.",
+      "useExistingPosts": false,
+      "posts": [
+        {
+          "url": "/design-system/article/",
+          "data": {
+            "title": "A clear starting point for every article",
+            "description": "Article layout demonstration, not a published blog post.",
+            "author": "Domus Zero · Template example"
+          }
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "type": "faq",
+      "tone": "muted",
+      "eyebrow": "07 · FAQ",
+      "title": "A few useful answers.",
+      "intro": "Native keyboard-accessible accordions. Questions below describe the current contact and process information.",
+      "items": [
+        {
+          "question": "How can I start a conversation?",
+          "answer": "Contact Domus Zero by phone or email. You will be asked for basic information about your property, recent energy bills, the address, photographs and details of existing energy systems."
+        },
+        {
+          "question": "What happens after the first conversation?",
+          "answer": "The process includes an initial video consultation, a remote feasibility analysis and a site visit before a tailored solution and fixed-price proposal."
+        },
+        {
+          "question": "Can the system include both solar PV and a heat pump?",
+          "answer": "Domus Zero designs integrated solar PV and heat pump solutions tailored to the property."
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "type": "reviews",
+      "eyebrow": "08 · Customer reviews",
+      "title": "Let your customers tell the story.",
+      "intro": "This component supports a three- or four-column quote grid. No verified reviews have been supplied, so this preview shows its honest empty state.",
+      "items": []
+    },
+    {
+      "id": "review-example",
+      "type": "reviews",
+      "tone": "muted",
+      "eyebrow": "08 · Structure example only",
+      "title": "The review-card arrangement.",
+      "intro": "The following cards are layout placeholders, not customer testimonials. Replace them only with approved customer quotations.",
+      "columns": 3,
+      "items": [
+        {
+          "quote": "[Approved customer quotation goes here.]",
+          "name": "[Customer name]",
+          "context": "[Property type · Location]"
+        },
+        {
+          "quote": "[Approved customer quotation goes here.]",
+          "name": "[Customer name]",
+          "context": "[Property type · Location]"
+        },
+        {
+          "quote": "[Approved customer quotation goes here.]",
+          "name": "[Customer name]",
+          "context": "[Property type · Location]"
+        }
+      ]
+    },
+    {
+      "id": "metrics",
+      "type": "metrics",
+      "tone": "muted",
+      "eyebrow": "09 · Statistics and charts",
+      "title": "Put the numbers in context.",
+      "intro": "Illustrative data for the template, not measured customer results.",
+      "items": [
+        {
+          "label": "Example solar array",
+          "value": "6 kWp",
+          "detail": "Illustrative capacity"
+        },
+        {
+          "label": "Example annual bill before",
+          "value": "€3,200",
+          "detail": "Demonstration data"
+        },
+        {
+          "label": "Example annual bill after",
+          "value": "€1,100",
+          "detail": "Demonstration data"
+        }
+      ],
+      "chart": {
+        "title": "Example annual energy costs",
+        "max": 4000,
+        "unit": "€/year",
+        "rows": [
+          {
+            "label": "Example property A",
+            "before": 3200,
+            "after": 1100
+          },
+          {
+            "label": "Example property B",
+            "before": 2800,
+            "after": 1400
+          }
+        ]
+      },
+      "note": "Example values only. Replace them with verified project data before publication."
+    },
+    {
+      "id": "comparison",
+      "type": "table",
+      "eyebrow": "10 · Comparison and data tables",
+      "title": "Make options easy to compare.",
+      "caption": "Illustrative cost comparison — not a quote",
+      "columns": [
+        "Example system",
+        "Gross cost",
+        "Assumed incentives",
+        "Net cost"
+      ],
+      "rows": [
+        {
+          "label": "Solar PV",
+          "values": [
+            "€10,500",
+            "€5,250",
+            "€5,250"
+          ]
+        },
+        {
+          "label": "Heat pump",
+          "values": [
+            "€9,800",
+            "€6,370",
+            "€3,430"
+          ]
+        },
+        {
+          "label": "Integrated system",
+          "values": [
+            "€18,400",
+            "€11,000",
+            "€7,400"
+          ],
+          "highlight": true
+        }
+      ],
+      "note": "Figures are copied from the supplied mock-up as examples. Incentive eligibility and rates have not been confirmed."
+    },
+    {
+      "id": "pricing",
+      "type": "pricing",
+      "tone": "muted",
+      "eyebrow": "11 · Pricing cards",
+      "title": "A clear starting point for each option.",
+      "intro": "Example ranges from the mock-up. These are layout demonstrations, not approved prices.",
+      "items": [
+        {
+          "title": "Solar PV",
+          "text": "An example solar package.",
+          "price": "€8,000–€14,000",
+          "unit": "illustrative installation range",
+          "features": [
+            "Solar panels and inverter",
+            "Example installation scope",
+            "Final design after assessment"
+          ],
+          "link": {
+            "href": "/en/contact/",
+            "label": "Discuss solar PV"
+          }
+        },
+        {
+          "title": "Integrated system",
+          "text": "Solar PV and a heat pump together.",
+          "price": "€15,000–€28,000",
+          "unit": "illustrative installation range",
+          "badge": "Featured example",
+          "featured": true,
+          "features": [
+            "Combined solar and heating design",
+            "Example administration scope",
+            "Final design after assessment"
+          ],
+          "link": {
+            "href": "/en/contact/",
+            "label": "Discuss your system"
+          }
+        },
+        {
+          "title": "Heat pump",
+          "text": "An example heating package.",
+          "price": "€9,000–€16,000",
+          "unit": "illustrative installation range",
+          "features": [
+            "Heat pump and controls",
+            "Example installation scope",
+            "Final design after assessment"
+          ],
+          "link": {
+            "href": "/en/contact/",
+            "label": "Discuss heating"
+          }
+        }
+      ],
+      "note": "Replace example pricing with approved ranges before publishing."
+    },
+    {
+      "id": "financial",
+      "type": "financial",
+      "eyebrow": "12 · Financial summaries",
+      "title": "Show how the total is built.",
+      "benefits": [
+        {
+          "title": "Example heat-pump incentive",
+          "value": "65%",
+          "text": "Demonstration assumption from the mock-up, not confirmed eligibility."
+        },
+        {
+          "title": "Example solar incentive",
+          "value": "50%",
+          "text": "Demonstration assumption from the mock-up, not confirmed eligibility."
+        }
+      ],
+      "summary": {
+        "label": "Illustrative project breakdown",
+        "rows": [
+          {
+            "label": "Gross system cost",
+            "value": "€18,400"
+          },
+          {
+            "label": "Example heat-pump incentive",
+            "value": "−€7,800"
+          },
+          {
+            "label": "Example solar incentive",
+            "value": "−€3,200"
+          }
+        ],
+        "totalLabel": "Example net cost",
+        "total": "€7,400",
+        "details": [
+          {
+            "label": "Example annual savings",
+            "value": "€2,100"
+          },
+          {
+            "label": "Simple payback",
+            "value": "3.5 years"
+          }
+        ]
+      },
+      "note": "Illustrative arithmetic only. Actual eligibility, payment timing, and project costs must be confirmed."
+    },
+    {
+      "id": "calculator",
+      "type": "calculator",
+      "tone": "muted",
+      "eyebrow": "13 · Interactive calculator",
+      "title": "Explore an illustrative estimate.",
+      "intro": "Change the inputs to see the example model respond. This is a working template prototype, not a validated quotation or engineering assessment."
+    },
+    {
+      "id": "next-step",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Ready for the next step?",
+      "intro": "The shared contact call to action keeps visitors in their selected language."
+    }
+  ],
+  "pageLinks": [
+    {
+      "label": "Text + images",
+      "href": "#text-images"
+    },
+    {
+      "label": "Process",
+      "href": "#process"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    },
+    {
+      "label": "Image cards",
+      "href": "#services"
+    },
+    {
+      "label": "Callouts",
+      "href": "#why-us"
+    },
+    {
+      "label": "Blog",
+      "href": "#journal"
+    },
+    {
+      "label": "FAQ",
+      "href": "#questions"
+    },
+    {
+      "label": "Reviews",
+      "href": "#reviews"
+    },
+    {
+      "label": "Statistics",
+      "href": "#metrics"
+    },
+    {
+      "label": "Tables",
+      "href": "#comparison"
+    },
+    {
+      "label": "Pricing",
+      "href": "#pricing"
+    },
+    {
+      "label": "Financial summary",
+      "href": "#financial"
+    },
+    {
+      "label": "Calculator",
+      "href": "#calculator"
+    }
+  ],
+  "calculator": true
+}

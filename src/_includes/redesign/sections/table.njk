@@ -1,0 +1,8 @@
+<div class="dz-table-scroll" role="region" aria-label="{{ section.caption | default(section.title) | escape }}" tabindex="0">
+<table class="dz-table">
+<caption>{{ section.caption | default(section.title) | escape }}</caption>
+<thead><tr>{% for column in section.columns %}<th scope="col">{{ column | escape }}</th>{% endfor %}</tr></thead>
+<tbody>{% for row in section.rows %}<tr{% if row.highlight %} class="dz-table-highlight"{% endif %}><th scope="row">{{ row.label | escape }}</th>{% for value in row.values %}<td>{{ value | escape }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+</table>
+</div>
+{% if section.note %}<p class="dz-note">{{ section.note | escape }}</p>{% endif %}

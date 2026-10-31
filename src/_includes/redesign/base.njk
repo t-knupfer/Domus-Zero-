@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ 'it' if language == 'it' else 'en-US' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title | escape }} | {{ client.name | escape }}{% if page.url == '/' %} | {{ client.address.city | escape }}, {{ client.address.state | escape }}{% endif %}</title>
+<meta name="description" content="{{ description | default('') | escape }}">
+{% if preview %}<meta name="robots" content="noindex,nofollow">{% else %}<link rel="canonical" href="{{ client.domain | escape }}{{ page.url | escape }}">{% endif %}
+{% if not preview and alternateUrl %}
+<link rel="alternate" hreflang="{{ 'it' if language == 'it' else 'en-US' }}" href="{{ client.domain | escape }}{{ page.url | escape }}">
+<link rel="alternate" hreflang="{{ 'en-US' if language == 'it' else 'it' }}" href="{{ client.domain | escape }}{{ alternateUrl | escape }}">
+{% endif %}
+<meta property="og:title" content="{{ title | escape }}">
+<meta property="og:description" content="{{ description | default('') | escape }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ client.domain | escape }}{{ page.url | escape }}">
+<meta property="og:image" content="{{ client.domain | escape }}/assets/images/logo-small.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<meta name="theme-color" content="#1b2d22">
+<link rel="stylesheet" href="/assets/css/redesign.css">
+<script defer src="/assets/js/redesign-navigation.js"></script>
+{% if calculator %}<script defer src="/assets/js/redesign-calculator.js"></script>{% endif %}
+</head>
+<body class="dz-site">
+{% set italian = language == 'it' %}
+<a class="dz-skip" href="#main">{{ 'Vai al contenuto' if italian else 'Skip to content' }}</a>
+{% if preview %}<div class="dz-preview">{{ 'Anteprima dei modelli · Non pubblicato sul sito live' if italian else 'Template preview · Not published to the live site' }}</div>{% endif %}
+<header class="dz-header">
+{% set homePath = '/en/' if not italian else '/' %}
+{% set aboutPath = '/chi-siamo/' if italian else '/en/about/' %}
+{% set servicesPath = servicesUrl | default('/i-nostri-servizi/' if italian else '/en/our-services/') %}
+{% set processPath = '/il-nostro-processo/' if italian else '/en/our-process/' %}
+{% set contactPath = contactUrl | default('/contatto/' if italian else '/en/contact/') %}
+<a class="dz-brand" href="{{ homePath }}" aria-label="{{ 'Domus Zero — Home' if not italian else 'Domus Zero — Pagina iniziale' }}"><img src="/assets/images/tempAddOns/DZ-logo.jpeg" width="96" height="66" alt=""></a>
+
+<div class="dz-header-actions">
+<a class="dz-header-phone" href="tel:{{ client.phonePrimaryForTel | replace(' ', '') | escape }}" aria-label="{{ 'Chiama Domus Zero al ' if italian else 'Call Domus Zero at ' }}{{ client.phonePrimaryFormatted | escape }}"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 5a2 2 0 0 1 2-2Z"/></svg><span class="dz-phone-number">{{ client.phonePrimaryFormatted | escape }}</span></a>
+<a class="dz-language-toggle" href="{{ alternateUrl | default('/en/' if italian else '/') | escape }}" hreflang="{{ 'en-US' if italian else 'it' }}" lang="{{ 'en-US' if italian else 'it' }}" aria-label="{{ 'Switch to English' if italian else 'Passa all’italiano' }}"><img src="{{ '/assets/svgs/gb.svg' if italian else '/assets/svgs/it.svg' }}" alt="" width="24" height="18"></a>
+<button class="dz-menu-toggle" type="button" aria-controls="dz-navigation" aria-expanded="false" aria-label="{{ 'Apri menu' if italian else 'Open menu' }}" data-open-label="{{ 'Apri menu' if italian else 'Open menu' }}" data-close-label="{{ 'Chiudi menu' if italian else 'Close menu' }}" hidden><svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path data-menu-icon d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+</div>
+<nav id="dz-navigation" aria-label="{{ 'Navigazione principale' if italian else 'Main navigation' }}">
+<a href="{{ homePath }}"{% if page.url == homePath %} aria-current="page"{% endif %}>Home</a>
+<a href="{{ aboutPath }}"{% if page.url == aboutPath %} aria-current="page"{% endif %}>{{ 'Chi siamo' if italian else 'About Us' }}</a>
+<a href="{{ servicesPath | escape }}"{% if page.url == servicesPath %} aria-current="page"{% endif %}>{{ 'I nostri servizi' if italian else 'Our Services' }}</a>
+<a href="{{ processPath }}"{% if page.url == processPath %} aria-current="page"{% endif %}>{{ 'Il nostro processo' if italian else 'Our Process' }}</a>
+<a href="{{ contactPath | escape }}"{% if page.url == contactPath %} aria-current="page"{% endif %}>{{ 'Contatto' if italian else 'Contact' }}</a>
+</nav>
+</header>
+<main id="main">{{ content | safe }}</main>
+<footer class="dz-footer{% if footerDoubleHeight %} dz-footer-tall{% endif %}"><a class="dz-brand" href="{{ '/' if italian else '/en/' }}">Domus Zero</a><p>Sun and Air - the Power of Domus Zero</p><a href="mailto:{{ client.email | escape }}">{{ client.email | escape }}</a>{% if privacyUrl %}<a href="{{ privacyUrl | escape }}">{{ 'Privacy' if italian else 'Privacy notice' }}</a>{% endif %}</footer>
+</body>
+</html>

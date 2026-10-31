@@ -1,0 +1,23 @@
+{
+  "preview": true,
+  "language": "en",
+  "servicesUrl": "/design-system/services/",
+  "contactUrl": "/design-system/contact/",
+  "title": "Contact",
+  "description": "Contact Domus Zero to discuss solar PV and heat pump solutions for homes and agriturismos in Tuscany and across Italy",
+  "eyebrow": "Contact",
+  "heading": "Contact Us",
+  "sections": [
+    {
+      "type": "contact",
+      "id": "contact-details",
+      "detailsOnly": true,
+      "addressLines": [
+        "Domus Zero",
+        "Firenze FI Italy"
+      ],
+      "closingAtBottom": true
+    }
+  ],
+  "alternateUrl": "/contatto/"
+}

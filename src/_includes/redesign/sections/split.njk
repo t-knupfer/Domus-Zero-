@@ -1,0 +1,12 @@
+{% if section.paragraphsFullWidth %}<div class="dz-copy dz-copy-full">{% for paragraph in section.paragraphs %}<p>{{ paragraph | escape }}</p>{% endfor %}</div>{% endif %}
+<div class="dz-split{% if not section.images.length %} dz-split-no-photo{% endif %}{% if section.imageSide == 'left' %} dz-split-reversed{% endif %}">
+<div class="dz-copy">
+{% if not section.paragraphsFullWidth %}{% for paragraph in section.paragraphs %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
+{% if section.items %}<ul class="dz-checklist">{% for item in section.items %}<li>{{ item | escape }}</li>{% endfor %}</ul>{% endif %}
+{% if section.quote %}<figure class="dz-founder-quote"><blockquote><p>{{ section.quote.text | escape }}</p></blockquote><figcaption><strong>{{ section.quote.name | escape }}</strong><span>{{ section.quote.role | escape }}</span></figcaption></figure>{% endif %}
+{% if section.link %}<a class="dz-button" href="{{ section.link.href | escape }}">{{ section.link.label | escape }} <span aria-hidden="true">→</span></a>{% endif %}
+</div>
+{% if section.images.length %}<div class="dz-media{% if section.naturalImages %} dz-media-natural{% endif %}{% if section.images.length == 2 %} dz-media-pair{% endif %}">
+{% for image in section.images %}<figure class="dz-photo"><img src="{{ image.src | escape }}" alt="{{ image.alt | default('') | escape }}" loading="lazy" decoding="async" width="{{ image.width | default(800) }}" height="{{ image.height | default(900) }}">{% if image.representative %}{% include "redesign/representative-label.njk" %}{% endif %}{% if image.caption %}<figcaption>{{ image.caption | escape }}</figcaption>{% endif %}</figure>{% endfor %}
+</div>{% endif %}
+</div>

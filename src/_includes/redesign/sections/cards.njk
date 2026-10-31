@@ -1,0 +1,6 @@
+<div class="dz-grid dz-cols-{{ section.columns | default(3) | escape }}">
+{% for item in section.items %}<article class="dz-card dz-image-card">
+{% if item.image %}<figure class="dz-photo"><img{% if item.imageBottom %} class="dz-image-bottom"{% endif %} src="{{ item.image | escape }}" alt="{{ item.imageAlt | default('') | escape }}" width="{{ item.imageWidth | default(600) }}" height="{{ item.imageHeight | default(480) }}" loading="lazy" decoding="async">{% if item.representative %}{% include "redesign/representative-label.njk" %}{% endif %}</figure>{% endif %}
+<div class="dz-card-body"><h3>{% if item.link %}<a href="{{ item.link.href | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>{% if item.text %}<p>{{ item.text | escape }}</p>{% endif %}{% if item.link.label %}<a class="dz-text-link" href="{{ item.link.href | escape }}">{{ item.link.label | escape }} <span aria-hidden="true">→</span></a>{% endif %}</div>
+</article>{% endfor %}
+</div>

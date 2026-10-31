@@ -1,0 +1,60 @@
+{
+  "heading": "Il nostro processo per un'installazione chiavi in mano",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "why-choose-1662",
+      "type": "steps",
+      "title": "Rendi più sostenibile la tua casa o il tuo agriturismo in poche settimane",
+      "items": [
+        {
+          "title": "Contattaci",
+          "text": "Contattaci per telefono, email o tramite il sito web. Ti chiederemo alcune informazioni di base sul tuo immobile, come le bollette energetiche recenti, l'indirizzo, alcune foto dell'edificio e i dettagli degli impianti energetici esistenti."
+        },
+        {
+          "title": "Consulenza video iniziale",
+          "text": "Esamineremo le informazioni fornite e parleremo del tuo immobile, degli impianti energetici esistenti, dei tuoi obiettivi e delle eventuali domande iniziali su fotovoltaico, pompe di calore o processo di installazione."
+        },
+        {
+          "title": "Analisi di fattibilità a distanza",
+          "text": "Effettueremo un'analisi iniziale di fattibilità sulla base della posizione, del Comune, dello spazio disponibile, degli impianti energetici esistenti e di altre caratteristiche rilevanti del tuo immobile."
+        },
+        {
+          "title": "Sopralluogo",
+          "text": "Programmeremo un sopralluogo di tre ore per raccogliere le informazioni tecniche necessarie a progettare la soluzione fotovoltaica e con pompa di calore più adatta al tuo immobile."
+        },
+        {
+          "title": "Soluzione su misura e offerta a prezzo fisso",
+          "text": "Sviluppiamo una soluzione dettagliata e personalizzata per il tuo immobile e presentiamo un'offerta chiara a prezzo fisso. Una volta accettata l'offerta, prepariamo il piano dettagliato di realizzazione e il calendario dell'installazione."
+        },
+        {
+          "title": "Installazione di alta qualità",
+          "text": "Installiamo il sistema integrato fotovoltaico e con pompa di calore con particolare attenzione alla qualità, all'affidabilità e alla riduzione al minimo dei disagi per la tua casa o agriturismo."
+        },
+        {
+          "title": "Consegna chiavi in mano",
+          "text": "Consegniamo il sistema completato come soluzione chiavi in mano, interamente realizzata su misura per il tuo immobile."
+        },
+        {
+          "title": "Assistenza",
+          "text": "Supporto post-realizzazione secondo le tue esigenze e su richiesta."
+        }
+      ]
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Inizia oggi la tua transizione energetica",
+      "availability": {
+        "title": "Orari disponibili",
+        "lines": [
+          "Online: 24 ore su 24, 7 giorni su 7",
+          "Per telefono: Tutti i giorni dalle 9:00 alle 18:00"
+        ]
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "Il nostro processo"
+}

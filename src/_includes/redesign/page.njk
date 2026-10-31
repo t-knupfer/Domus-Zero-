@@ -1,0 +1,26 @@
+---
+layout: redesign/base.njk
+---
+{% set italian = language == 'it' %}
+<div class="dz-hero dz-container{% if heroImage %} dz-hero-with-image{% endif %}" id="{{ heroId | default('page-intro') | escape }}">
+<div class="dz-hero-copy">
+{% if eyebrow %}<p class="dz-eyebrow">{{ eyebrow | escape }}</p>{% endif %}
+<h1{% if headingId %} id="{{ headingId | escape }}"{% endif %}>{{ heading | default(title) | escape }}{% if headingAccent %}<br><em>{{ headingAccent | escape }}</em>{% endif %}</h1>
+{% if introduction %}<p class="dz-lead">{{ introduction | escape }}</p>{% endif %}
+{% if pageLinks %}<nav class="dz-jumps" aria-label="{{ 'Sezioni della pagina' if italian else 'Page sections' }}">{% for link in pageLinks %}<a href="{{ link.href | escape }}">{{ link.label | escape }} <span aria-hidden="true">↓</span></a>{% endfor %}</nav>{% endif %}
+{% if heroLink %}<a class="dz-button dz-hero-action" href="{{ heroLink.href | escape }}">{{ heroLink.label | escape }} <span aria-hidden="true">→</span></a>{% endif %}
+</div>
+{% if heroImage %}<figure class="dz-photo dz-hero-photo"><img class="dz-hero-image" src="{{ heroImage.src | escape }}" alt="{{ heroImage.alt | default('') | escape }}" width="{{ heroImage.width | default(1000) }}" height="{{ heroImage.height | default(1200) }}" fetchpriority="high" decoding="async">{% if heroImage.representative %}{% include "redesign/representative-label.njk" %}{% endif %}</figure>{% endif %}
+</div>
+{% for section in sections %}
+{% set sectionIndex = loop.index %}
+<section class="dz-section dz-tone-{{ section.tone | default('light') | escape }}" id="{{ section.id | default('section-' ~ sectionIndex) | escape }}">
+<div class="dz-container">
+{% if section.eyebrow %}<p class="dz-eyebrow">{{ section.eyebrow | escape }}</p>{% endif %}
+{% if section.title %}<h2>{{ section.title | escape }}</h2>{% endif %}
+{% if section.intro %}<p class="dz-section-intro">{{ section.intro | escape }}</p>{% endif %}
+{% include "redesign/sections/" ~ section.type ~ ".njk" %}
+</div>
+</section>
+{% endfor %}
+{{ content | safe }}

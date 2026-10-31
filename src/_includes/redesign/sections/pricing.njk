@@ -1,0 +1,10 @@
+<div class="dz-grid dz-cols-3">
+{% for item in section.items %}<article class="dz-card dz-price-card{% if item.featured %} dz-price-featured{% endif %}">
+{% if item.badge %}<p class="dz-price-badge">{{ item.badge | escape }}</p>{% endif %}
+<h3>{{ item.title | escape }}</h3><p>{{ item.text | escape }}</p>
+<p class="dz-price">{{ item.price | escape }}{% if item.unit %}<span>{{ item.unit | escape }}</span>{% endif %}</p>
+<ul class="dz-checklist">{% for feature in item.features %}<li>{{ feature | escape }}</li>{% endfor %}</ul>
+{% if item.link %}<a class="dz-button" href="{{ item.link.href | escape }}">{{ item.link.label | escape }} →</a>{% endif %}
+</article>{% endfor %}
+</div>
+{% if section.note %}<p class="dz-note">{{ section.note | escape }}</p>{% endif %}

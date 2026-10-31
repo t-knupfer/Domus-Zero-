@@ -1,0 +1,10 @@
+<div class="dz-financial{% if not section.benefits.length %} dz-financial-single{% endif %}">
+{% if section.benefits.length %}<dl class="dz-benefits">{% for item in section.benefits %}<div><dt>{{ item.title | escape }}</dt><dd><strong>{{ item.value | escape }}</strong><p>{{ item.text | escape }}</p></dd></div>{% endfor %}</dl>{% endif %}
+<div class="dz-financial-summary">
+<p class="dz-eyebrow">{{ section.summary.label | escape }}</p>
+<dl>{% for row in section.summary.rows %}<div class="dz-money-row"><dt>{{ row.label | escape }}</dt><dd>{{ row.value | escape }}</dd></div>{% endfor %}
+<div class="dz-money-row dz-money-total"><dt>{{ section.summary.totalLabel | escape }}</dt><dd>{{ section.summary.total | escape }}</dd></div>
+{% for row in section.summary.details %}<div class="dz-money-row"><dt>{{ row.label | escape }}</dt><dd>{{ row.value | escape }}</dd></div>{% endfor %}</dl>
+</div>
+</div>
+{% if section.note %}<p class="dz-note">{{ section.note | escape }}</p>{% endif %}

@@ -1,0 +1,25 @@
+{
+  "heading": "Contact Us",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "cs-contact",
+      "type": "contact",
+      "detailsOnly": true,
+      "addressLines": [
+        "Domus Zero",
+        "Firenze FI Italy"
+      ],
+      "closingAtBottom": true,
+      "image": {
+        "src": "/assets/images/display/tuscan-streets.webp",
+        "alt": "Aerial view of a cypress-lined road through the Tuscan countryside",
+        "width": 1050,
+        "height": 1400
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "Contact",
+  "footerDoubleHeight": true
+}

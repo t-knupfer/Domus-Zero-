@@ -3,7 +3,7 @@ preloadCSS: '/assets/css/blog.css'
 eleventyComputed:
     title: '{{ title }}'
     description: '{{ description }}'
-    preloadImg: '{{ image }}'
+
     permalink: '/blog/{{ title | slug }}/index.html'
 ---
 
@@ -19,11 +19,7 @@ eleventyComputed:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
+
     </section>
 
     <!-- ============================================ -->
@@ -39,9 +35,7 @@ eleventyComputed:
 
             <article class="blog-article">
                 <!--Main Article Image-->
-                <picture class="blog-mainImage">
-                    <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
-                </picture>
+
 
                 <!--Article Info-->
                 <div class="article-group">

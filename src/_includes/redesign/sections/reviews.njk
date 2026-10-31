@@ -1,0 +1,3 @@
+{% if section.items.length %}<div class="dz-grid dz-cols-{{ section.columns | default(3) | escape }}">
+{% for item in section.items %}<figure class="dz-card dz-review"><span class="dz-quote" aria-hidden="true">“</span><blockquote><p>{{ item.quote | escape }}</p></blockquote><figcaption><strong>{{ item.name | escape }}</strong>{% if item.context %}<span>{{ item.context | escape }}</span>{% endif %}</figcaption></figure>{% endfor %}
+</div>{% else %}<p class="dz-empty">{{ 'Le testimonianze approvate saranno aggiunte qui.' if italian else 'Approved customer reviews will be added here.' }}</p>{% endif %}

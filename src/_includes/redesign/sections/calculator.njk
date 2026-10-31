@@ -1,0 +1,30 @@
+<div class="dz-calculator" data-dz-calculator data-language="{{ 'it' if italian else 'en-US' }}" hidden>
+<fieldset class="dz-calc-inputs"><legend>{{ 'La tua casa' if italian else 'Your home' }}</legend>
+<label for="bill-{{ sectionIndex }}">{{ 'Spesa energetica annua (€)' if italian else 'Annual energy bill (€)' }} <output data-bill-label for="bill-{{ sectionIndex }}">€2,400</output>
+<input data-bill id="bill-{{ sectionIndex }}" type="range" min="600" max="8000" step="100" value="2400"></label>
+<label for="size-{{ sectionIndex }}">{{ 'Superficie (m²)' if italian else 'Home size (m²)' }} <output data-size-label for="size-{{ sectionIndex }}">180 m²</output>
+<input data-size id="size-{{ sectionIndex }}" type="range" min="50" max="600" step="10" value="180"></label>
+<label for="product-{{ sectionIndex }}">{{ 'Soluzione' if italian else 'Solution' }}
+<select data-product id="product-{{ sectionIndex }}"><option value="pv">{{ 'Solo fotovoltaico' if italian else 'Solar PV only' }}</option><option value="integrated" selected>{{ 'Fotovoltaico + pompa di calore' if italian else 'Solar PV + heat pump' }}</option><option value="hp">{{ 'Solo pompa di calore' if italian else 'Heat pump only' }}</option><option value="full">{{ 'Sistema con batteria' if italian else 'System with battery' }}</option></select></label>
+<label for="constraints-{{ sectionIndex }}">{{ 'Vincoli architettonici' if italian else 'Architectural restrictions' }}
+<select data-constraints id="constraints-{{ sectionIndex }}"><option value="no">{{ 'No' if italian else 'None' }}</option><option value="unsure">{{ 'Non so' if italian else 'Not sure' }}</option><option value="yes">{{ 'Sì' if italian else 'Yes' }}</option></select></label>
+<p class="dz-note">{{ 'Esempio dimostrativo: ipotesi e incentivi da verificare prima della pubblicazione.' if italian else 'Illustrative model: assumptions and incentives need review before publication.' }}</p>
+</fieldset>
+<div class="dz-calc-result">
+<p class="dz-eyebrow">{{ 'Risparmio annuo stimato' if italian else 'Estimated annual savings' }}</p>
+<p class="dz-calc-saving" data-saving>—</p>
+<p class="dz-sr-only" data-announcement role="status" aria-live="polite" aria-atomic="true"></p>
+<dl>
+<div class="dz-money-row"><dt>{{ 'Potenza FV' if italian else 'Solar capacity' }}</dt><dd data-capacity>—</dd></div>
+<div class="dz-money-row"><dt>{{ 'Produzione annua' if italian else 'Annual solar generation' }}</dt><dd data-generation>—</dd></div>
+<div class="dz-money-row"><dt>{{ 'Costo lordo' if italian else 'Gross cost' }}</dt><dd data-gross>—</dd></div>
+<div class="dz-money-row"><dt>{{ 'Incentivi ipotizzati' if italian else 'Assumed incentives' }}</dt><dd data-incentives>—</dd></div>
+<div class="dz-money-row dz-money-total"><dt>{{ 'Costo netto' if italian else 'Net cost' }}</dt><dd data-net>—</dd></div>
+<div class="dz-money-row"><dt>{{ 'Rientro semplice' if italian else 'Simple payback' }}</dt><dd data-payback>—</dd></div>
+</dl>
+<details class="dz-calc-assumptions"><summary>{{ 'Ipotesi di calcolo' if italian else 'Calculation assumptions' }}</summary><p data-assumptions></p><p>{{ 'Non è un preventivo. Non include finanziamento, manutenzione o variazioni future dei prezzi.' if italian else 'Not a quote. Financing, maintenance, and future price changes are excluded.' }}</p></details>
+<a class="dz-button" href="{{ '/contatto/' if italian else '/en/contact/' }}">{{ 'Parliamo del tuo progetto' if italian else 'Discuss your project' }} →</a>
+<p class="dz-note">{{ 'Nessun dato viene inviato o salvato.' if italian else 'Inputs stay in this page; nothing is submitted or saved.' }}</p>
+</div>
+</div>
+<p class="dz-note" data-dz-calc-fallback>{{ 'Il calcolatore richiede JavaScript. Puoi contattarci per una valutazione.' if italian else 'The calculator requires JavaScript. Contact us for a property assessment.' }} <a href="{{ '/contatto/' if italian else '/en/contact/' }}">{{ 'Contatti' if italian else 'Contact' }}</a></p>

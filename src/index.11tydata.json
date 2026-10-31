@@ -1,0 +1,182 @@
+{
+  "heading": "Turnkey Solar Panels and Heat Pumps for Your Home or Agriturismo",
+  "heroId": "hero-856",
+  "sections": [
+    {
+      "id": "sbs",
+      "type": "split",
+      "tone": "light",
+      "title": "Sustainable Energy Solutions for Properties in Italy",
+      "paragraphs": [
+        "We help home- and agriturismo-owners in Tuscany transition to efficient, integrated solar PV and heat pump systems tailored to their properties.",
+        "Our goal is to reduce energy costs, fossil-fuel consumption and carbon emissions while making the transition as straightforward and reliable as possible."
+      ],
+      "items": [],
+      "imageSide": "left",
+      "eyebrow": "About Domus Zero",
+      "link": {
+        "href": "/en/our-process/",
+        "label": "Our Process"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/img-8286.webp",
+          "alt": "Solar canopy among garden trees and shrubs",
+          "width": 1050,
+          "height": 1400,
+          "representative": false
+        },
+        {
+          "src": "/assets/images/display/luxurious-home-with-pv.webp",
+          "alt": "Stone country home with rooftop solar panels",
+          "width": 1400,
+          "height": 1050,
+          "representative": true
+        }
+      ],
+      "naturalImages": true
+    },
+    {
+      "id": "services-1354",
+      "type": "cards",
+      "columns": 4,
+      "tone": "muted",
+      "title": "We’re Committed to Delivering High-Quality Services",
+      "items": [
+        {
+          "title": "Integrated Solar PV and Heat Pump Systems",
+          "link": {
+            "href": "/en/our-services/"
+          },
+          "image": "/assets/images/display/completed-turnkey-system-pv-plus-heat-pump.webp",
+          "imageAlt": "Solar panels and an outdoor heat pump at a stone home",
+          "imageWidth": 1400,
+          "imageHeight": 933,
+          "representative": true
+        },
+        {
+          "title": "High-Quality Efficient and Reliable Equipment",
+          "link": {
+            "href": "/en/our-services/"
+          },
+          "image": "/assets/images/display/img-8274.webp",
+          "imageAlt": "Two outdoor heat pump units beside a garden",
+          "imageWidth": 1050,
+          "imageHeight": 1400,
+          "representative": false,
+          "imageBottom": true
+        },
+        {
+          "title": "Turnkey Installation with All-Inclusive, Fixed Pricing",
+          "link": {
+            "href": "/en/our-services/"
+          },
+          "image": "/assets/images/display/solar-install.webp",
+          "imageAlt": "Installer wearing gray and blue gloves working on a solar panel",
+          "imageWidth": 1400,
+          "imageHeight": 933,
+          "representative": false
+        },
+        {
+          "title": "Ongoing Support and Optional Lifetime Maintenance",
+          "link": {
+            "href": "/en/our-services/"
+          },
+          "image": "/assets/images/display/treelined-drive.webp",
+          "imageAlt": "Cypress-lined driveway stretching into the distance",
+          "imageWidth": 1050,
+          "imageHeight": 1400,
+          "representative": false
+        }
+      ]
+    },
+    {
+      "id": "sbs-r-869",
+      "type": "split",
+      "tone": "light",
+      "title": "A Complete Turnkey Energy Solution",
+      "paragraphs": [
+        "Domus Zero manages your solar and heat pump project from initial assessment through installation and ongoing support."
+      ],
+      "items": [
+        "Assessment of your property and development of a tailored solar PV and heat pump solution",
+        "Coordination with your Comune and local electricity provider",
+        "Integrated design and installation of solar and heat pump systems",
+        "High-quality, efficient and reliable equipment selected for your property",
+        "Clear project planning and fixed-price proposals",
+        "Management of permits, administration and removal of replaced equipment",
+        "Installation planned to minimize disruption to your home or agriturismo",
+        "Optional ongoing maintenance and support after installation"
+      ],
+      "imageSide": "right",
+      "link": {
+        "href": "/en/contact/",
+        "label": "Schedule A Consultation"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/tuscan-home-with-rooftop-pv.webp",
+          "alt": "Stone home with solar panels integrated into a tiled roof",
+          "width": 1400,
+          "height": 933,
+          "representative": true
+        },
+        {
+          "src": "/assets/images/display/installation-inverter-battery.webp",
+          "alt": "Illustration of a technician working on an inverter and battery system",
+          "width": 1400,
+          "height": 933,
+          "representative": true
+        }
+      ],
+      "naturalImages": true
+    },
+    {
+      "id": "why-choose-289",
+      "type": "callouts",
+      "columns": 3,
+      "tone": "muted",
+      "title": "The Most Reliable Switch to a Sustainable Home",
+      "items": [
+        {
+          "title": "A Carefree Transition",
+          "text": "We take care of all the details, so you don't have to. Switch to a sustainable home with minimal disruption to your daily life."
+        },
+        {
+          "title": "All-Inclusive Turnkey Service",
+          "text": "We plan with your Comune and local electricity provider, apply for government subsidies, dispose of old systems, install a fully integrated sustainable system, and carry out regular servicing if requested."
+        },
+        {
+          "title": "From Assessment to Completion in Weeks",
+          "text": "We can move from the initial consultation to completed installation within a matter of weeks."
+        }
+      ]
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "muted",
+      "title": "Start Your Energy Transition Today",
+      "availability": {
+        "title": "Available Hours",
+        "lines": [
+          "Online: 24/7",
+          "By phone: Every day from 9 a.m. to 6 p.m."
+        ]
+      }
+    }
+  ],
+  "eyebrow": "Solar & Heat Pump Solutions for Your Property in Italy",
+  "introduction": "Domus Zero provides uniquely reliable, fully integrated solar PV and heat pump installations for homes and agriturismos in Tuscany and across Italy, helping property owners reduce energy costs, fossil-fuel use and carbon emissions.",
+  "heroLink": {
+    "href": "/en/contact/",
+    "label": "Schedule A Consultation"
+  },
+  "heroImage": {
+    "src": "/assets/images/display/attractive-modest-home-with-pv-by-pool.webp",
+    "alt": "Tuscan-style home with rooftop solar panels beside a pool",
+    "width": 1400,
+    "height": 933,
+    "representative": true
+  }
+}

@@ -1,0 +1,4 @@
+<div class="dz-cta-content">
+<a class="dz-button" href="{{ contactUrl | default('/contatto/' if italian else '/en/contact/') | escape }}">{{ 'Contattaci oggi' if italian else 'Contact us now' }} <span aria-hidden="true">→</span></a>
+{% if section.availability %}<div class="dz-availability"><h3>{{ section.availability.title | escape }}</h3>{% for line in section.availability.lines %}<p>{{ line | escape }}</p>{% endfor %}</div>{% endif %}
+</div>

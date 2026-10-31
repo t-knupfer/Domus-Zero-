@@ -1,7 +1,7 @@
 ---
 title: 'Blog'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+
 permalink: 'blog/'
 eleventyNavigation:
     key: Blog
@@ -21,11 +21,7 @@ eleventyNavigation:
 
     <section id="int-hero">
         <h1 id="home-h">Blog</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
+
     </section>
 
     <!-- ============================================ -->
@@ -45,14 +41,7 @@ eleventyNavigation:
                 {%- for post in collections.post | reverse -%}
                     <article class="recent-articles">
                         <!--Main Article Image-->
-                        <picture class="blog-mainImage">
-                            <img
-                            src="{{ post.data.image }}"
-                            alt="{{ post.data.imageAlt }}"
-                            width="795"
-                            height="400"
-                            decoding="async" />
-                        </picture>
+
                         <!--Article Info-->
                         <div class="article-group">
                             <div class="blog-authorGroup">

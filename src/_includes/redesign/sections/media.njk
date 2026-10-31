@@ -1,0 +1,1 @@
+<div class="dz-photo-grid">{% for image in section.images %}<figure class="dz-photo"><img src="{{ image.src | escape }}" alt="{{ image.alt | escape }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" decoding="async">{% if image.representative %}{% include "redesign/representative-label.njk" %}{% endif %}</figure>{% endfor %}</div>

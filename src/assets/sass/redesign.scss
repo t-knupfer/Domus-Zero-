@@ -1,0 +1,317 @@
+/* Arial/Helvetica body and headings; shared minimum keeps supporting text readable. */
+.dz-site {
+  --font-min: 20px;
+  --ink: #1b2d22; --paper: #edf0e4; --muted: #687465; --lime: #ace15e; --line: #d9dfd1;
+  margin: 0; color: var(--ink); background: var(--paper);
+  font: var(--font-min)/1.7 Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.dz-site *, .dz-site *::before, .dz-site *::after { box-sizing: border-box; }
+.dz-site a { color: inherit; text-underline-offset: 4px; }
+.dz-site img { display: block; max-width: 100%; }
+.dz-site h1, .dz-site h2, .dz-site h3, .dz-site p, .dz-site figure { margin: 0; }
+.dz-site h1 { font-size: clamp(2.6rem, 5.5vw, 5.2rem); line-height: 1.05; letter-spacing: -.055em; max-width: 1000px; }
+.dz-site h1 em { font: inherit; color: inherit; }
+.dz-site h2 { font-size: clamp(2rem, 3.2vw, 3rem); line-height: 1.15; letter-spacing: -.04em; max-width: 850px; margin-bottom: 28px; }
+.dz-site h3 { font-size: var(--font-min); line-height: 1.35; letter-spacing: -.02em; }
+.dz-container { width: min(1184px, calc(100% - 96px)); margin-inline: auto; }
+.dz-preview { background: #e5edcf; text-align: center; padding: 8px 20px; font-size: var(--font-min); letter-spacing: .13em; text-transform: uppercase; }
+.dz-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 48px; border-bottom: 1px solid var(--line); }
+.dz-brand { display: inline-flex; align-items: center; gap: 12px; font: bold 1.3rem Georgia, serif; text-decoration: none; white-space: nowrap; }
+.dz-brand img { object-fit: contain; mix-blend-mode: multiply; }
+.dz-header .dz-brand img { width: 64px; height: 44px; }
+.dz-header-actions { order: 2; display: flex; align-items: center; gap: 24px; margin-left: auto; }
+.dz-header-phone { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; text-decoration: none; font-size: var(--font-min); }
+.dz-language-toggle { display: inline-grid; place-items: center; width: 32px; min-height: 40px; }
+.dz-header nav a[aria-current=page] { font-weight: 700; text-decoration: underline; }
+.dz-header nav { order: 1; display: flex; align-items: center; flex-wrap: wrap; gap: 28px; font-size: var(--font-min); }
+.dz-header nav a { text-decoration: none; }
+.dz-header nav a:hover { text-decoration: underline; }
+.dz-menu-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+.dz-button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 13px 24px; border: 1px solid var(--ink); border-radius: 40px; background: var(--ink); color: white !important; font: 700 var(--font-min)/1.5 Arial, sans-serif; text-decoration: none; cursor: pointer; }
+.dz-button-outline { color: var(--ink) !important; background: transparent; }
+.dz-site :focus-visible { outline: 3px solid #758d34; outline-offset: 5px; }
+.dz-hero { padding-block: 85px 65px; }
+.dz-eyebrow { font-size: var(--font-min); font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #637a30; margin-bottom: 20px !important; }
+.dz-lead { max-width: 660px; color: var(--muted); font-size: var(--font-min); margin-top: 28px !important; }
+.dz-jumps { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 35px; }
+.dz-jumps a { padding: 8px 15px; border: 1px solid var(--line); border-radius: 30px; font-size: var(--font-min); text-decoration: none; }
+.dz-section { padding-block: 80px; }
+.dz-tone-light { background: #fff; }
+.dz-tone-muted { background: #e9eddf; }
+.dz-tone-dark { background: var(--ink); color: white; --muted: #bac5b2; --line: #45553e; }
+.dz-tone-dark .dz-eyebrow { color: var(--lime); }
+.dz-tone-dark .dz-button { background: var(--lime); color: var(--ink) !important; border-color: var(--lime); }
+.dz-section-intro { max-width: 680px; color: var(--muted); margin-bottom: 32px !important; }
+.dz-split { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; align-items: center; }
+.dz-split-reversed .dz-copy { order: 2; }
+.dz-copy p { margin-bottom: 20px; color: var(--muted); }
+.dz-copy .dz-button { margin-top: 15px; }
+.dz-checklist { padding-left: 20px; margin-block: 22px; }
+.dz-checklist li { padding: 5px 0 5px 8px; }
+.dz-checklist li::marker { color: #748b39; }
+.dz-media { display: grid; gap: 16px; }
+.dz-media img { width: 100%; height: 390px; object-fit: cover; border-radius: 12px; }
+.dz-media-pair { grid-template-columns: 1fr 1fr; }
+.dz-media-pair figure:nth-child(2) { margin-top: 50px; }
+.dz-media-pair img { height: 310px; }
+.dz-media figcaption { font-size: var(--font-min); color: var(--muted); padding-top: 10px; }
+.dz-steps { display: grid; grid-auto-flow: column; grid-template-rows: repeat(var(--step-rows, 4), auto); grid-template-columns: 1fr 1fr; gap: 0 60px; padding: 0; list-style: none; }
+.dz-steps li { display: flex; gap: 22px; border-top: 1px solid var(--line); padding-block: 24px; }
+.dz-step-number { display: grid; place-items: center; flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%; background: #e9eedc; color: #627638; font-size: var(--font-min); font-weight: 700; }
+.dz-steps p { font-size: var(--font-min); color: var(--muted); margin-top: 10px; }
+.dz-grid { display: grid; gap: 22px; }
+.dz-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.dz-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.dz-card { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #ffffff08; }
+.dz-card p { color: var(--muted); font-size: var(--font-min); margin-top: 14px; }
+.dz-image-card img { width: 100%; height: 205px; object-fit: cover; }
+.dz-card-body { padding: 26px; }
+.dz-text-link { display: inline-block; font-size: var(--font-min); font-weight: 700; margin-top: 22px; }
+.dz-callout { padding: 30px; }
+.dz-callout-mark { display: inline-grid; place-items: center; width: 40px; height: 40px; margin-bottom: 38px; border-radius: 50%; color: var(--lime); border: 1px solid var(--line); font-size: 1.25rem; }
+.dz-callout .dz-value { font-size: 3rem; font-weight: 700; color: var(--lime); margin-bottom: 24px; margin-top: 0; letter-spacing: -.05em; }
+.dz-contact { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+.dz-contact-info > * { margin-bottom: 16px !important; }
+.dz-contact-info address { font-style: normal; color: var(--muted); font-size: var(--font-min); }
+.dz-site fieldset { margin: 20px 0 0; padding: 0; border: 0; min-width: 0; }
+.dz-site label { display: block; font-size: var(--font-min); font-weight: 700; margin-bottom: 18px; }
+.dz-site input, .dz-site textarea { display: block; width: 100%; min-width: 0; padding: 13px; margin-top: 7px; font: inherit; color: var(--ink); border: 1px solid #bac6af; border-radius: 6px; background: #fff; }
+.dz-site textarea { resize: vertical; }
+.dz-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.dz-site :disabled { cursor: not-allowed; }
+.dz-site fieldset:disabled .dz-button { opacity: .55; }
+.dz-note, .dz-meta { font-size: var(--font-min) !important; color: var(--muted); }
+.dz-note { margin-block: 14px !important; }
+.dz-empty { border: 1px dashed var(--line); border-radius: 12px; padding: 36px; color: var(--muted); }
+.dz-faq { max-width: 900px; }
+.dz-faq details { border-bottom: 1px solid var(--line); }
+.dz-faq summary { padding: 24px 35px 24px 0; font-weight: 700; cursor: pointer; position: relative; list-style: none; }
+.dz-faq summary::-webkit-details-marker { display: none; }
+.dz-faq summary::after { content: '+'; position: absolute; right: 5px; font-size: 1.3rem; font-weight: 400; }
+.dz-faq details[open] summary::after { content: '−'; }
+.dz-faq details div { padding-bottom: 24px; color: var(--muted); max-width: 760px; }
+.dz-review { padding: 32px; }
+.dz-quote { font: 4rem/.8 Georgia, serif; color: #758c37; }
+.dz-review blockquote { margin: 15px 0 30px; }
+.dz-review blockquote p { font-size: var(--font-min); color: var(--ink); }
+.dz-review figcaption { border-top: 1px solid var(--line); padding-top: 18px; font-size: var(--font-min); }
+.dz-review figcaption span { display: block; color: var(--muted); font-size: var(--font-min); }
+.dz-footer { display: flex; align-items: center; justify-content: space-between; gap: 25px; flex-wrap: wrap; padding: 14px 48px; line-height: 1.5; background: var(--ink); color: white; font-size: var(--font-min); }
+.dz-footer p { color: #bdc7b3; }
+.dz-article { max-width: 960px; padding-block: 80px; }
+.dz-article .dz-meta { margin-top: 25px; }
+.dz-article-image { width: 100%; height: auto; border-radius: 12px; margin-block: 40px; aspect-ratio: 16/9; object-fit: cover; }
+.dz-prose { max-width: 700px; margin-inline: auto; padding-bottom: 40px; }
+.dz-prose p, .dz-prose ul, .dz-prose ol { margin-bottom: 24px; }
+.dz-prose h2, .dz-prose h3 { margin-block: 40px 20px; }
+.dz-prose blockquote { margin: 30px 0; padding-left: 25px; border-left: 3px solid #748b39; font-family: Georgia, serif; font-style: italic; }
+.dz-prose img { height: auto; }
+.dz-sr-only, .dz-skip { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.dz-skip:focus { position: fixed; z-index: 10; top: 10px; left: 10px; width: auto; height: auto; clip-path: none; padding: 15px; background: #fff; }
+@media (max-width: 1200px) {
+  .dz-header { flex-wrap: wrap; padding: 22px 32px; }
+  .dz-header nav { order: 3; width: 100%; justify-content: space-between; gap: 15px; }
+  .dz-header-actions { gap: 8px; }
+  .dz-header-phone, .dz-language-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; }
+  .dz-header-phone .dz-phone-number { display: none; }
+  .dz-header-phone svg { width: 22px; height: 22px; }
+  .dz-header nav { flex-direction: column; align-items: stretch; gap: 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: var(--font-min); }
+  .dz-header nav a { padding: 12px 4px; min-height: 48px; }
+  .dz-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dz-split, .dz-contact { gap: 35px; }
+}
+@media (max-width: 650px) {
+  .dz-container { width: calc(100% - 40px); }
+  .dz-header { padding: 20px; gap: 20px; }
+  .dz-header .dz-brand img { width: 64px; height: 44px; }
+  .dz-header-actions { gap: 8px; }
+  .dz-header-phone { gap: 5px; font-size: var(--font-min); }
+  .dz-header-phone svg { width: 22px; height: 22px; }
+  .dz-header .dz-button { padding: 10px 16px; font-size: var(--font-min); }
+  .dz-brand { font-size: var(--font-min); gap: 7px; }
+  .dz-header nav { font-size: var(--font-min); gap: 0; justify-content: flex-start; }
+  .dz-hero { padding-block: 55px 45px; }
+  .dz-section { padding-block: 50px; }
+  .dz-split, .dz-contact, .dz-grid, .dz-form-row { grid-template-columns: 1fr; }
+  .dz-split-reversed .dz-copy { order: 0; }
+  .dz-media img { height: 320px; }
+  .dz-media-pair img { height: 250px; }
+  .dz-steps { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; gap: 0; }
+  .dz-image-card img { height: 240px; }
+  .dz-footer { padding: 35px 20px; flex-direction: column; align-items: flex-start; }
+  .dz-article { padding-block: 50px; }
+}
+
+
+/* Additional section formats, kept deliberately small. */
+.dz-site [hidden] { display: none !important; }
+.dz-site dl, .dz-site dd { margin: 0; }
+.dz-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; }
+.dz-metrics > div { padding: 24px; border: 1px solid var(--line); border-radius: 12px; }
+.dz-metrics dt { font-size: var(--font-min); color: var(--muted); }
+.dz-metrics dd { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 700; letter-spacing: -.05em; line-height: 1.3; margin-top: 12px; }
+.dz-metrics p { font-size: var(--font-min); color: var(--muted); margin-top: 8px; }
+.dz-chart { margin-top: 32px !important; border-radius: 14px; padding: 30px; background: #e9eddf; color: var(--ink); }
+.dz-chart figcaption { font-weight: 700; margin-bottom: 25px; }
+.dz-chart ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 22px; }
+.dz-chart li > strong { font-size: var(--font-min); }
+.dz-chart-row { display: grid; grid-template-columns: max-content minmax(0, 1fr) max-content; align-items: center; gap: 15px; margin-top: 8px; font-size: var(--font-min); }
+.dz-chart-row > span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.dz-bar-track { background: #d7dfcc; border-radius: 4px; overflow: hidden; height: 22px; }
+.dz-bar-before, .dz-bar-after { height: 100%; max-width: 100%; }
+.dz-bar-before { background: #64775a; }
+.dz-bar-after { background: #8bb948; }
+.dz-table-scroll { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+.dz-table { width: 100%; border-collapse: collapse; min-width: 620px; font-size: var(--font-min); }
+.dz-table caption { padding: 22px; text-align: left; font-weight: 700; }
+.dz-table th, .dz-table td { padding: 20px 22px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.dz-table thead { background: #e5ecd7; color: var(--ink); }
+.dz-table-highlight { background: #e9eddf; color: var(--ink); }
+.dz-price-card { padding: 30px; display: flex; flex-direction: column; position: relative; }
+.dz-price-featured { border: 2px solid #758e3c; background: #e9eddf; color: var(--ink); }
+.dz-price-badge { font-size: var(--font-min) !important; color: #4b602b !important; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; margin: 0 0 15px !important; }
+.dz-price-card .dz-price { font-size: 1.9rem; font-weight: 700; letter-spacing: -.04em; color: inherit; margin-top: 25px; }
+.dz-price span { display: block; font-weight: 400; font-size: var(--font-min); letter-spacing: 0; color: var(--muted); }
+.dz-price-card .dz-checklist { font-size: var(--font-min); flex: 1; }
+.dz-price-card .dz-button { margin-top: 25px; }
+.dz-financial { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; }
+.dz-financial-single { grid-template-columns: minmax(0, 650px); }
+.dz-benefits > div { border-top: 1px solid var(--line); padding-block: 22px; }
+.dz-benefits dt { font-weight: 700; }
+.dz-benefits dd strong { display: block; font-size: 2rem; color: #6c8434; letter-spacing: -.04em; margin-block: 7px; }
+.dz-benefits p { color: var(--muted); font-size: var(--font-min); }
+.dz-financial-summary, .dz-calc-result { padding: 35px; border-radius: 15px; background: #1b2d22; color: white; --line: #47573d; --muted: #bdc7b4; }
+.dz-financial-summary .dz-eyebrow, .dz-calc-result .dz-eyebrow { color: #ace15e; }
+.dz-money-row { display: flex; align-items: baseline; justify-content: space-between; gap: 25px; padding-block: 15px; border-bottom: 1px solid var(--line); font-size: var(--font-min); }
+.dz-money-row dt { color: var(--muted); }
+.dz-money-row dd { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+.dz-money-total { padding-block: 22px; }
+.dz-money-total dd { font-size: 1.65rem; color: #ace15e; letter-spacing: -.04em; }
+.dz-calculator { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; align-items: start; }
+.dz-site .dz-calc-inputs { margin: 0; }
+.dz-calc-inputs legend { font-size: var(--font-min); font-weight: 700; margin-bottom: 28px; }
+.dz-calc-inputs label { margin-bottom: 30px; }
+.dz-calc-inputs output { float: right; font-weight: 400; }
+.dz-calc-inputs input[type=range] { padding: 0; margin-top: 20px; accent-color: #678336; height: 24px; }
+.dz-site select { width: 100%; padding: 13px 8px; border: 1px solid #bac6af; border-radius: 6px; background: white; color: var(--ink); font: inherit; margin-top: 7px; }
+.dz-calc-saving { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.2; letter-spacing: -.05em; font-weight: 700; color: #ace15e; margin-bottom: 20px !important; }
+.dz-calc-assumptions { margin-block: 24px; font-size: var(--font-min); color: var(--muted); }
+.dz-calc-assumptions summary { cursor: pointer; font-weight: 700; padding-block: 12px; }
+.dz-calc-assumptions p { margin-top: 12px; }
+.dz-calc-result .dz-button { background: #ace15e; color: #1b2d22 !important; border-color: #ace15e; }
+@media (max-width: 850px) {
+  .dz-financial, .dz-calculator { grid-template-columns: 1fr; gap: 30px; }
+  .dz-price-card { padding: 23px; }
+  .dz-price-card .dz-price { font-size: 1.6rem; }
+}
+@media (max-width: 650px) {
+  .dz-metrics { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .dz-metrics > div { padding: 16px; }
+  .dz-chart { padding: 22px 16px; }
+  .dz-chart-row { grid-template-columns: max-content minmax(0, 1fr); gap: 8px; font-size: var(--font-min); }
+  .dz-chart-row .dz-bar-track { grid-row: 2; grid-column: 1 / -1; }
+  .dz-chart-row > span:last-child { grid-row: 1; grid-column: 2; }
+  .dz-financial-summary, .dz-calc-result { padding: 25px 20px; }
+  .dz-money-row { gap: 10px 15px; flex-wrap: wrap; font-size: var(--font-min); }
+  .dz-money-row dd { margin-left: auto; }
+}
+
+/* Representative contact page: details only until form integration follows migration. */
+.dz-contact-label { display: block; font-size: var(--font-min); text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: var(--muted); margin-block: 24px 8px; }
+.dz-contact-details { grid-template-columns: 1fr 1fr; align-items: center; }
+.dz-contact-details .dz-contact-info { padding-right: 30px; }
+.dz-contact-details .dz-contact-info > p > a { font-size: clamp(var(--font-min), 2vw, 1.55rem); font-weight: 700; letter-spacing: -.025em; }
+.dz-contact-photo img { width: 100%; height: 520px; border-radius: 14px; object-fit: cover; }
+.dz-cta-content { display: flex; align-items: flex-start; justify-content: space-between; gap: 35px; }
+.dz-availability { min-width: 260px; }
+.dz-availability h3 { font-size: var(--font-min); margin-bottom: 16px; }
+.dz-availability p { color: var(--muted); font-size: var(--font-min); }
+@media (max-width: 650px) {
+  .dz-contact-details { grid-template-columns: 1fr; }
+  .dz-contact-details .dz-contact-info { padding-right: 0; }
+  .dz-contact-photo img { height: 330px; }
+  .dz-cta-content { flex-direction: column; }
+  .dz-availability { min-width: 0; }
+}
+
+/* Home uses the same page shell, with an image and its existing contact action. */
+.dz-hero-with-image { display: grid; grid-template-columns: 1.2fr 1fr; gap: 65px; align-items: center; }
+.dz-hero-with-image h1 { font-size: clamp(2.6rem, 4.5vw, 4.2rem); }
+.dz-hero-image { width: 100%; height: 570px; object-fit: cover; border-radius: 16px; }
+.dz-hero-action { margin-top: 30px; }
+.dz-founder-quote { padding: 25px; border-left: 3px solid #748b39; background: var(--paper); margin-block: 25px !important; }
+.dz-founder-quote blockquote { margin: 0; }
+.dz-founder-quote blockquote p { font-size: var(--font-min); }
+.dz-founder-quote figcaption { font-size: var(--font-min); }
+.dz-founder-quote figcaption span { display: block; font-size: var(--font-min); color: var(--muted); margin-top: 4px; }
+.dz-image-card h3 a { text-decoration: none; }
+.dz-image-card h3 a:hover { text-decoration: underline; }
+@media (max-width: 1200px) {
+  .dz-hero-with-image { gap: 35px; }
+  .dz-hero-image { height: 500px; }
+}
+@media (max-width: 650px) {
+  .dz-hero-with-image { grid-template-columns: 1fr; }
+  .dz-hero-image { height: 350px; }
+}
+
+@media (max-width: 450px) {
+  .dz-metrics { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Owner-supplied installation photos retain their full composition in content sections. */
+.dz-media-natural { align-items: center; }
+.dz-media-natural img { height: auto; }
+.dz-media-natural.dz-media-pair figure:nth-child(2) { margin-top: 0; }
+.dz-contact-no-photo { grid-template-columns: minmax(0, 1fr); }
+
+.dz-image-card img.dz-image-bottom { object-position: center bottom; }
+
+.dz-contact-info .dz-contact-closing { margin-top: 36px; }
+
+/* Photo-free editing state. */
+.dz-split-no-photo { grid-template-columns: minmax(0, 1fr); }
+
+/* Image library: preserve landscape compositions; generated-image labels are the
+   explicitly requested exception to the 20px minimum for page text. */
+.dz-photo { position: relative; min-width: 0; }
+.dz-representative { position: absolute; right: 8px; bottom: 8px; z-index: 1; padding: 2px 4px; border-radius: 2px; background: #edf0e459; color: #334138cc; font: 400 9px/1.2 Arial, Helvetica, sans-serif; letter-spacing: 0; }
+.dz-hero-photo .dz-hero-image { height: auto; }
+.dz-step-photo { margin-top: 20px !important; }
+.dz-step-photo img { width: 100%; height: auto; border-radius: 10px; }
+.dz-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: center; }
+.dz-photo-grid img { width: 100%; height: auto; border-radius: 12px; }
+@media (max-width: 650px) { .dz-photo-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Let the two process columns flow independently when only some steps have photos. */
+.dz-steps-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; }
+.dz-steps-columns .dz-steps { display: block; margin: 0; }
+.dz-photo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .dz-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) { .dz-steps-columns, .dz-photo-grid { grid-template-columns: minmax(0, 1fr); gap: 0; } .dz-photo-grid { gap: 24px; } }
+
+.dz-copy-full { margin-bottom: 32px; }
+.dz-copy-full p:last-child { margin-bottom: 0; }
+
+/* Compact top and bottom bands; keep the approved text sizes and touch targets. */
+.dz-header { padding-block: 6px; }
+.dz-footer { padding-block: 6px; }
+.dz-hero { padding-block: 45px 35px; }
+.dz-section:has(> .dz-container > .dz-cta-content) { padding-block: 32px; }
+.dz-section:has(> .dz-container > .dz-cta-content) h2 { margin-bottom: 18px; }
+@media (max-width: 1200px) { .dz-header { padding-block: 8px; } }
+@media (max-width: 650px) {
+  .dz-hero { padding-block: 35px 30px; }
+  .dz-footer { padding-block: 16px; gap: 12px; }
+}
+
+/* Equal desktop process rows pair 1/5, 2/6, 3/7 and 4/8. */
+.dz-steps-even { grid-template-rows: repeat(var(--step-rows, 4), 1fr); }
+.dz-steps-even li { margin: 0; }
+.dz-tone-muted .dz-callout-mark { color: #637a30; }
+.dz-footer-tall { min-height: 84px; }
+@media (max-width: 650px) {
+  .dz-steps-even { grid-template-rows: none; }
+  .dz-footer-tall { min-height: 340px; justify-content: center; }
+}

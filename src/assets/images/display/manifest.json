@@ -1,0 +1,149 @@
+[
+  {
+    "source": "assets/images/generated/Attractive-modest-home-with-PV-by-pool.png",
+    "file": "attractive-modest-home-with-pv-by-pool.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Completed-turnkey-system-PV-plus-heat-pump.png",
+    "file": "completed-turnkey-system-pv-plus-heat-pump.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Group-of-homes-one-with-PV.png",
+    "file": "group-of-homes-one-with-pv.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Installation-inverter-battery.png",
+    "file": "installation-inverter-battery.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Luxurious-home-with-PV-HP-surveying.png",
+    "file": "luxurious-home-with-pv-hp-surveying.webp",
+    "width": 1400,
+    "height": 1050,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Luxurious-home-with-PV.png",
+    "file": "luxurious-home-with-pv.webp",
+    "width": 1400,
+    "height": 1050,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Residential-installation-in-progress.png",
+    "file": "residential-installation-in-progress.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Site-survey-at-Tuscan-property.png",
+    "file": "site-survey-at-tuscan-property.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Technician-inspecting-installed-heat-pump.png",
+    "file": "technician-inspecting-installed-heat-pump.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/generated/Tuscan-home-with-rooftop-PV.png",
+    "file": "tuscan-home-with-rooftop-pv.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "generated"
+  },
+  {
+    "source": "assets/images/projects/originals/IMG_8274.heic",
+    "file": "img-8274.webp",
+    "width": 1050,
+    "height": 1400,
+    "kind": "real"
+  },
+  {
+    "source": "assets/images/projects/originals/IMG_8281.HEIC",
+    "file": "img-8281.webp",
+    "width": 1400,
+    "height": 1050,
+    "kind": "real"
+  },
+  {
+    "source": "assets/images/projects/originals/IMG_8282.HEIC",
+    "file": "img-8282.webp",
+    "width": 1400,
+    "height": 1050,
+    "kind": "real"
+  },
+  {
+    "source": "assets/images/projects/originals/IMG_8286.HEIC",
+    "file": "img-8286.webp",
+    "width": 1050,
+    "height": 1400,
+    "kind": "real"
+  },
+  {
+    "source": "assets/images/projects/originals/IMG_8287.HEIC",
+    "file": "img-8287.webp",
+    "width": 1400,
+    "height": 1050,
+    "kind": "real"
+  },
+  {
+    "source": "assets/images/projects/originals/IMG_8288.HEIC",
+    "file": "img-8288.webp",
+    "width": 1400,
+    "height": 1050,
+    "kind": "real"
+  },
+  {
+    "source": "assets/images/solar_owl.jpg",
+    "file": "solar-owl.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "stock"
+  },
+  {
+    "source": "assets/images/solar_trailer_car.jpg",
+    "file": "solar-trailer-car.webp",
+    "width": 1400,
+    "height": 788,
+    "kind": "stock"
+  },
+  {
+    "source": "assets/images/treelined_drive.jpg",
+    "file": "treelined-drive.webp",
+    "width": 1050,
+    "height": 1400,
+    "kind": "stock"
+  },
+  {
+    "source": "assets/images/solar_install.jpg",
+    "file": "solar-install.webp",
+    "width": 1400,
+    "height": 933,
+    "kind": "stock"
+  },
+  {
+    "source": "assets/images/tuscan_streets.jpg",
+    "file": "tuscan-streets.webp",
+    "width": 1050,
+    "height": 1400,
+    "kind": "stock"
+  }
+]

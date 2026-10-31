@@ -1,0 +1,63 @@
+{
+  "heading": "Servizi per fotovoltaico e pompe di calore",
+  "heroId": "int-hero",
+  "sections": [
+    {
+      "id": "sbs-r-869",
+      "type": "split",
+      "tone": "light",
+      "title": "Soluzioni energetiche integrate chiavi in mano",
+      "paragraphs": [
+        "Domus Zero gestisce il tuo progetto per fotovoltaico, pompa di calore e batterie di accumulo dalla valutazione iniziale fino all'installazione e all'assistenza continuativa."
+      ],
+      "items": [
+        "Valutazione del tuo immobile e sviluppo di una soluzione fotovoltaica, con pompa di calore e batterie di accumulo su misura",
+        "Collaborazione proattiva con il Comune e il gestore locale dell'energia per individuare le soluzioni sostenibili più adatte alla tua abitazione",
+        "Progettazione e installazione integrate di impianti fotovoltaici, pompe di calore e batterie di accumulo",
+        "Apparecchiature di alta qualità, efficienti e affidabili, selezionate per il tuo immobile",
+        "Pianificazione chiara del progetto e offerte a prezzo fisso",
+        "Gestione di permessi, pratiche amministrative e rimozione degli impianti sostituiti",
+        "Installazione pianificata per ridurre al minimo i disagi nella tua casa o nel tuo agriturismo",
+        "Opzionale: Servizi di manutenzione e assistenza periodica per gli impianti installati"
+      ],
+      "imageSide": "left",
+      "link": {
+        "href": "/contatto/",
+        "label": "Prenota una consulenza"
+      },
+      "images": [
+        {
+          "src": "/assets/images/display/img-8281.webp",
+          "alt": "Pensilina fotovoltaica sopra un parcheggio residenziale",
+          "width": 1400,
+          "height": 1050,
+          "representative": false
+        },
+        {
+          "src": "/assets/images/display/img-8274.webp",
+          "alt": "Due unità esterne a pompa di calore accanto a un giardino",
+          "width": 1050,
+          "height": 1400,
+          "representative": false
+        }
+      ],
+      "naturalImages": true,
+      "paragraphsFullWidth": true
+    },
+    {
+      "id": "cta-262",
+      "type": "cta",
+      "tone": "dark",
+      "title": "Inizia oggi la tua transizione energetica",
+      "availability": {
+        "title": "Orari disponibili",
+        "lines": [
+          "Online: 24 ore su 24, 7 giorni su 7",
+          "Per telefono: Tutti i giorni dalle 9:00 alle 18:00"
+        ]
+      }
+    }
+  ],
+  "headingId": "home-h",
+  "eyebrow": "I nostri servizi"
+}

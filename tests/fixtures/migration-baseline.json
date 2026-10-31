@@ -1,0 +1,314 @@
+[
+  {
+    "source": "src/content/it/it-home.html",
+    "kind": "home",
+    "url": "/",
+    "language": "it",
+    "alternate": "/en/",
+    "title": "Fotovoltaico e Pompe di Calore in Italia",
+    "description": "Installazioni chiavi in mano di impianti fotovoltaici e pompe di calore per case private e agriturismi in Italia, inclusi progettazione, permessi, installazione e assistenza",
+    "expectedText": [
+      "Fotovoltaico e pompe di calore chiavi in mano per la tua casa o il tuo agriturismo",
+      "Domus Zero realizza impianti fotovoltaici e pompe di calore completamente integrati e particolarmente affidabili per case e agriturismi in Toscana e in tutta Italia, aiutando i proprietari a ridurre i costi energetici, l'uso di combustibili fossili e le emissioni di CO2.",
+      "Soluzioni energetiche sostenibili per immobili in Italia",
+      "Aiutiamo i proprietari di case e agriturismi in Toscana a passare a sistemi fotovoltaici e pompe di calore efficienti e integrati, progettati su misura per i loro immobili.",
+      "Il nostro obiettivo è ridurre i costi energetici, il consumo di combustibili fossili e le emissioni di carbonio, rendendo al tempo stesso la transizione il più semplice e affidabile possibile.",
+      "Garantiamo servizi di alta qualità",
+      "Sistemi integrati di fotovoltaico e pompe di calore",
+      "Alta qualità, efficienza e affidabilità",
+      "Installazione chiavi in mano con prezzo fisso",
+      "Assistenza continuativa e manutenzione opzionale per tutta la vita utile dell'impianto",
+      "Una soluzione energetica completa chiavi in mano",
+      "Domus Zero gestisce il tuo progetto fotovoltaico e con pompa di calore dalla valutazione iniziale fino all'installazione e all'assistenza continuativa.",
+      "Valutazione del tuo immobile e sviluppo di una soluzione fotovoltaica e con pompa di calore su misura",
+      "Collaborazione proattiva con il Comune e il gestore locale dell'energia per individuare le soluzioni sostenibili più adatte alla tua abitazione",
+      "Progettazione e installazione integrate di impianti fotovoltaici e pompe di calore",
+      "Apparecchiature di alta qualità, efficienti e affidabili, selezionate per il tuo immobile",
+      "Pianificazione chiara del progetto e offerte a prezzo fisso",
+      "Gestione di permessi, pratiche amministrative e rimozione degli impianti sostituiti",
+      "Installazione pianificata per ridurre al minimo i disagi nella tua casa o nel tuo agriturismo",
+      "Opzionale: Servizi di manutenzione e assistenza periodica per gli impianti installati",
+      "Il passaggio più affidabile verso una casa sostenibile",
+      "Una transizione senza pensieri",
+      "Ci occupiamo noi di tutti i dettagli, così non devi farlo tu. Rendi il tuo immobile più sostenibile riducendo al minimo i disagi nella tua vita quotidiana.",
+      "Servizio chiavi in mano tutto compreso",
+      "Pianifichiamo il progetto con il tuo Comune e il gestore locale dell'energia elettrica, richiediamo gli incentivi statali, smaltiamo i vecchi impianti, installiamo un sistema sostenibile completamente integrato e, su richiesta, effettuiamo la manutenzione periodica.",
+      "Realizzazione del progetto in poche settimane",
+      "Dalla prima consulenza alla conclusione dell’installazione nell'arco di poche settimane."
+    ],
+    "internalTargets": [
+      "/contatto/",
+      "/i-nostri-servizi/",
+      "/il-nostro-processo/"
+    ],
+    "hasContactCTA": true,
+    "expectedImages": [
+      "/assets/images/treelined_drive.jpg",
+      "/assets/images/tuscany_villa_standalone.jpg",
+      "/assets/images/solar_owl.jpg",
+      "/assets/images/heatpump.png",
+      "/assets/images/lightbulb_nature.jpg"
+    ]
+  },
+  {
+    "source": "src/index.html",
+    "kind": "home",
+    "url": "/en/",
+    "language": "en",
+    "alternate": "/",
+    "title": "Solar Panels & Heat Pumps in Italy",
+    "description": "Turnkey solar PV and heat pump installations for homes and agriturismos in Italy, including planning, permits, installation and ongoing support",
+    "expectedText": [
+      "Turnkey Solar Panels and Heat Pumps for Your Home or Agriturismo",
+      "Domus Zero provides uniquely reliable, fully integrated solar PV and heat pump installations for homes and agriturismos in Tuscany and across Italy, helping property owners reduce energy costs, fossil-fuel use and carbon emissions.",
+      "Sustainable Energy Solutions for Properties in Italy",
+      "We help home- and agriturismo-owners in Tuscany transition to efficient, integrated solar PV and heat pump systems tailored to their properties.",
+      "Our goal is to reduce energy costs, fossil-fuel consumption and carbon emissions while making the transition as straightforward and reliable as possible.",
+      "We’re Committed to Delivering High-Quality Services",
+      "Integrated Solar PV and Heat Pump Systems",
+      "High-Quality Efficient and Reliable Equipment",
+      "Turnkey Installation with All-Inclusive, Fixed Pricing",
+      "Ongoing Support and Optional Lifetime Maintenance",
+      "A Complete Turnkey Energy Solution",
+      "Domus Zero manages your solar and heat pump project from initial assessment through installation and ongoing support.",
+      "Assessment of your property and development of a tailored solar PV and heat pump solution",
+      "Coordination with your Comune and local electricity provider",
+      "Integrated design and installation of solar and heat pump systems",
+      "High-quality, efficient and reliable equipment selected for your property",
+      "Clear project planning and fixed-price proposals",
+      "Management of permits, administration and removal of replaced equipment",
+      "Installation planned to minimize disruption to your home or agriturismo",
+      "Optional ongoing maintenance and support after installation",
+      "The Most Reliable Switch to a Sustainable Home",
+      "A Carefree Transition",
+      "We take care of all the details, so you don't have to. Switch to a sustainable home with minimal disruption to your daily life.",
+      "All-Inclusive Turnkey Service",
+      "We plan with your Comune and local electricity provider, apply for government subsidies, dispose of old systems, install a fully integrated sustainable system, and carry out regular servicing if requested.",
+      "From Assessment to Completion in Weeks",
+      "We can move from the initial consultation to completed installation within a matter of weeks."
+    ],
+    "internalTargets": [
+      "/en/contact/",
+      "/en/our-process/",
+      "/en/our-services/"
+    ],
+    "hasContactCTA": true,
+    "expectedImages": [
+      "/assets/images/treelined_drive.jpg",
+      "/assets/images/tuscany_villa_standalone.jpg",
+      "/assets/images/solar_owl.jpg",
+      "/assets/images/heatpump.png",
+      "/assets/images/lightbulb_nature.jpg"
+    ]
+  },
+  {
+    "source": "src/content/it/chi-siamo.html",
+    "kind": "about",
+    "url": "/chi-siamo/",
+    "language": "it",
+    "alternate": "/en/about/",
+    "title": "Chi Siamo",
+    "description": "Scopri come Domus Zero aiuta i proprietari di case e agriturismi in Italia a ridurre i costi energetici con soluzioni fotovoltaiche e pompe di calore",
+    "expectedText": [
+      "Chi Siamo",
+      "Esperienza locale nell'energia sostenibile",
+      "Domus Zero aiuta i proprietari di case e agriturismi a passare a sistemi fotovoltaici e pompe di calore efficienti e integrati, progettati su misura per i loro immobili.",
+      "Con sede in Toscana, lavoriamo con clienti in tutta la regione, tra cui Chianti, Greve, Impruneta e Siena, e nel resto d'Italia, combinando la conoscenza del territorio con un approccio affidabile e attentamente gestito ai progetti di energia sostenibile.",
+      "La nostra esperienza comprende centinaia di progetti di energia sostenibile completati con successo. Abbiamo utilizzato questa esperienza per perfezionare il modo in cui i progetti fotovoltaici e con pompe di calore vengono pianificati e realizzati, con particolare attenzione all'affidabilità, alla qualità e a un business case positivo per i nostri clienti.",
+      "Stefan Knupfer",
+      "Fondatore & CEO"
+    ],
+    "internalTargets": [
+      "/il-nostro-processo/"
+    ],
+    "hasContactCTA": true,
+    "expectedImages": [
+      "/assets/images/tuscany_villa_standalone.jpg",
+      "/assets/images/solar_install.jpg"
+    ]
+  },
+  {
+    "source": "src/content/pages/about.html",
+    "kind": "about",
+    "url": "/en/about/",
+    "language": "en",
+    "alternate": "/chi-siamo/",
+    "title": "About Us",
+    "description": "Learn about Domus Zero and how we help our clients reduce energy costs and move away from fossil fuels by delivering solar PV and heat pump solutions for homes and agriturismos across Chianti, Siena, and the rest of Tuscany",
+    "expectedText": [
+      "About Domus Zero",
+      "Local Expertise in Sustainable Energy",
+      "Domus Zero helps home- and agriturismo-owners transition to efficient, integrated solar PV and heat pump systems tailored to their properties.",
+      "Based in Tuscany, we work with clients across the region, including Chianti, Greve, Impruneta and Siena, and across Italy, combining local knowledge with a reliable, carefully managed approach to sustainable energy projects.",
+      "Our experience spans hundreds of successfully completed sustainable energy projects. We have used that experience to refine how solar and heat pump projects are planned and installed, with a focus on reliability, quality and a positive business case for our clients.",
+      "Stefan Knupfer",
+      "Founder & CEO"
+    ],
+    "internalTargets": [
+      "/en/our-process/"
+    ],
+    "hasContactCTA": true,
+    "expectedImages": [
+      "/assets/images/tuscany_villa_standalone.jpg",
+      "/assets/images/solar_install.jpg"
+    ]
+  },
+  {
+    "source": "src/content/it/il-nostro-processo.html",
+    "kind": "process",
+    "url": "/il-nostro-processo/",
+    "language": "it",
+    "alternate": "/en/our-process/",
+    "title": "Il nostro processo",
+    "description": "Scopri come Domus Zero segue il tuo progetto fotovoltaico e con pompa di calore dalla consulenza iniziale fino all’offerta a prezzo fisso, all’installazione e alla consegna",
+    "expectedText": [
+      "Il nostro processo per un'installazione chiavi in mano",
+      "Rendi più sostenibile la tua casa o il tuo agriturismo in poche settimane",
+      "Contattaci",
+      "Contattaci per telefono, email o tramite il sito web. Ti chiederemo alcune informazioni di base sul tuo immobile, come le bollette energetiche recenti, l'indirizzo, alcune foto dell'edificio e i dettagli degli impianti energetici esistenti.",
+      "Consulenza video iniziale",
+      "Esamineremo le informazioni fornite e parleremo del tuo immobile, degli impianti energetici esistenti, dei tuoi obiettivi e delle eventuali domande iniziali su fotovoltaico, pompe di calore o processo di installazione.",
+      "Analisi di fattibilità a distanza",
+      "Effettueremo un'analisi iniziale di fattibilità sulla base della posizione, del Comune, dello spazio disponibile, degli impianti energetici esistenti e di altre caratteristiche rilevanti del tuo immobile.",
+      "Sopralluogo",
+      "Programmeremo un sopralluogo di tre ore per raccogliere le informazioni tecniche necessarie a progettare la soluzione fotovoltaica e con pompa di calore più adatta al tuo immobile.",
+      "Soluzione su misura e offerta a prezzo fisso",
+      "Sviluppiamo una soluzione dettagliata e personalizzata per il tuo immobile e presentiamo un'offerta chiara a prezzo fisso. Una volta accettata l'offerta, prepariamo il piano dettagliato di realizzazione e il calendario dell'installazione.",
+      "Installazione di alta qualità",
+      "Installiamo il sistema integrato fotovoltaico e con pompa di calore con particolare attenzione alla qualità, all'affidabilità e alla riduzione al minimo dei disagi per la tua casa o agriturismo.",
+      "Consegna chiavi in mano",
+      "Consegniamo il sistema completato come soluzione chiavi in mano, interamente realizzata su misura per il tuo immobile.",
+      "Assistenza",
+      "Supporto post-realizzazione secondo le tue esigenze e su richiesta."
+    ],
+    "internalTargets": [],
+    "hasContactCTA": true,
+    "expectedImages": []
+  },
+  {
+    "source": "src/content/pages/process.html",
+    "kind": "process",
+    "url": "/en/our-process/",
+    "language": "en",
+    "alternate": "/il-nostro-processo/",
+    "title": "Turnkey Solar & Heat Pump Installation Process",
+    "description": "See how Domus Zero takes your solar PV and heat pump project from initial consultation and site assessment to a fixed-price proposal, installation and handover",
+    "expectedText": [
+      "Our Turnkey Process",
+      "Make Your Home or Agriturismo Sustainable in Weeks",
+      "Contact Us",
+      "Contact us by phone, email or through the website. We will ask for some basic information about your property, such as recent energy bills, the address, photos of the building and details of your existing energy systems.",
+      "Initial Video Consultation",
+      "We will review the information you provide and discuss your property, current energy system, objectives and any initial questions about solar PV, heat pumps or the installation process.",
+      "Remote Feasibility Analysis",
+      "We carry out an initial feasibility analysis based on the location, Comune, available space, existing energy systems and other relevant characteristics of your property.",
+      "Site Visit",
+      "We schedule a three-hour site visit to collect the technical information required to design the appropriate solar PV and heat pump solution for your property.",
+      "Tailored Solution & Fixed-Price Proposal",
+      "We develop a detailed solution tailored to your property and provide a clear, fixed-price proposal. Once you accept the offer, we prepare the detailed implementation plan and installation schedule.",
+      "High-Quality Installation",
+      "We install the integrated solar PV and heat pump system with a focus on quality, reliability and minimal disruption to your home or agriturismo.",
+      "Turnkey Handover",
+      "We hand over the finished system, a fully implemented turnkey solution tailored to your property.",
+      "Support",
+      "Post-installation support as needed and requested by you."
+    ],
+    "internalTargets": [],
+    "hasContactCTA": true,
+    "expectedImages": []
+  },
+  {
+    "source": "src/content/it/i-nostri-servizi.html",
+    "kind": "services",
+    "url": "/i-nostri-servizi/",
+    "language": "it",
+    "alternate": "/en/our-services/",
+    "title": "I nostri servizi",
+    "description": "Scopri soluzioni chiavi in mano per impianti fotovoltaici, pompe di calore e batterie di accumulo per case e agriturismi in Toscana e in tutta Italia",
+    "expectedText": [
+      "Servizi per fotovoltaico e pompe di calore",
+      "Soluzioni energetiche integrate chiavi in mano",
+      "Domus Zero gestisce il tuo progetto per fotovoltaico, pompa di calore e batterie di accumulo dalla valutazione iniziale fino all'installazione e all'assistenza continuativa.",
+      "Valutazione del tuo immobile e sviluppo di una soluzione fotovoltaica, con pompa di calore e batterie di accumulo su misura",
+      "Collaborazione proattiva con il Comune e il gestore locale dell'energia per individuare le soluzioni sostenibili più adatte alla tua abitazione",
+      "Progettazione e installazione integrate di impianti fotovoltaici, pompe di calore e batterie di accumulo",
+      "Apparecchiature di alta qualità, efficienti e affidabili, selezionate per il tuo immobile",
+      "Pianificazione chiara del progetto e offerte a prezzo fisso",
+      "Gestione di permessi, pratiche amministrative e rimozione degli impianti sostituiti",
+      "Installazione pianificata per ridurre al minimo i disagi nella tua casa o nel tuo agriturismo",
+      "Opzionale: Servizi di manutenzione e assistenza periodica per gli impianti installati"
+    ],
+    "internalTargets": [
+      "/contatto/"
+    ],
+    "hasContactCTA": true,
+    "expectedImages": [
+      "/assets/images/solar_owl.jpg",
+      "/assets/images/heatpump.png"
+    ]
+  },
+  {
+    "source": "src/content/pages/services.html",
+    "kind": "services",
+    "url": "/en/our-services/",
+    "language": "en",
+    "alternate": "/i-nostri-servizi/",
+    "title": "Our Services",
+    "description": "Explore turnkey solar PV, heat pump and battery storage solutions for homes and agriturismos in Tuscany and across Italy",
+    "expectedText": [
+      "Solar PV & Heat Pump Services",
+      "Integrated, Turnkey Energy Solutions",
+      "Domus Zero manages your solar PV, heat pump and battery storage project from initial assessment through installation and ongoing support.",
+      "Assessment of your property and development of a tailored solar PV, battery storage and heat pump solution",
+      "Coordination with your Comune and local electricity provider",
+      "Integrated design and installation of solar PV, battery storage and heat pump systems",
+      "High-quality, efficient and reliable equipment selected for your property",
+      "Clear project planning and fixed-price proposals",
+      "Management of permits, administration and removal of replaced equipment",
+      "Installation planned to minimize disruption to your home or agriturismo",
+      "Optional ongoing maintenance and support after installation"
+    ],
+    "internalTargets": [
+      "/en/contact/"
+    ],
+    "hasContactCTA": true,
+    "expectedImages": [
+      "/assets/images/solar_owl.jpg",
+      "/assets/images/heatpump.png"
+    ]
+  },
+  {
+    "source": "src/content/it/contatto.html",
+    "kind": "contact",
+    "url": "/contatto/",
+    "language": "it",
+    "alternate": "/en/contact/",
+    "title": "Contatti",
+    "description": "Contatta Domus Zero per valutare impianti fotovoltaici e pompe di calore per case e agriturismi in Toscana e in tutta Italia",
+    "expectedText": [
+      "Contattaci"
+    ],
+    "internalTargets": [],
+    "hasContactCTA": false,
+    "expectedImages": [
+      "/assets/images/tuscan_streets.jpg"
+    ]
+  },
+  {
+    "source": "src/content/pages/contact.html",
+    "kind": "contact",
+    "url": "/en/contact/",
+    "language": "en",
+    "alternate": "/contatto/",
+    "title": "Contact",
+    "description": "Contact Domus Zero to discuss solar PV and heat pump solutions for homes and agriturismos in Tuscany and across Italy",
+    "expectedText": [
+      "Contact Us"
+    ],
+    "internalTargets": [],
+    "hasContactCTA": false,
+    "expectedImages": [
+      "/assets/images/tuscan_streets.jpg"
+    ]
+  }
+]

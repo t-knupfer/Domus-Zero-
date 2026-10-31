@@ -1,0 +1,50 @@
+{
+  "preview": true,
+  "language": "en",
+  "servicesUrl": "/design-system/services/",
+  "contactUrl": "/design-system/contact/",
+  "title": "Our Services",
+  "description": "Explore turnkey solar PV, heat pump and battery storage solutions for homes and agriturismos in Tuscany and across Italy",
+  "eyebrow": "Our Services",
+  "heading": "Solar PV & Heat Pump Services",
+  "introduction": "Explore turnkey solar PV, heat pump, and battery storage solutions for homes and agriturismos in Tuscany and across Italy.",
+  "sections": [
+    {
+      "type": "split",
+      "id": "integrated-solutions",
+      "title": "Integrated, Turnkey Energy Solutions",
+      "paragraphs": [
+        "Domus Zero manages your solar PV, heat pump and battery storage project from initial assessment through installation and ongoing support."
+      ],
+      "items": [
+        "Assessment of your property and development of a tailored solar PV, battery storage and heat pump solution",
+        "Coordination with your Comune and local electricity provider",
+        "Integrated design and installation of solar PV, battery storage and heat pump systems",
+        "High-quality, efficient and reliable equipment selected for your property",
+        "Clear project planning and fixed-price proposals",
+        "Management of permits, administration and removal of replaced equipment",
+        "Installation planned to minimize disruption to your home or agriturismo",
+        "Optional ongoing maintenance and support after installation"
+      ],
+      "imageSide": "left",
+      "link": {
+        "href": "/design-system/contact/",
+        "label": "Schedule a Consultation"
+      }
+    },
+    {
+      "type": "cta",
+      "id": "next-step",
+      "tone": "dark",
+      "title": "Start Your Energy Transition Today",
+      "availability": {
+        "title": "Available Hours",
+        "lines": [
+          "Online: 24/7",
+          "By phone: Every day from 9 a.m. to 6 p.m."
+        ]
+      }
+    }
+  ],
+  "alternateUrl": "/i-nostri-servizi/"
+}
